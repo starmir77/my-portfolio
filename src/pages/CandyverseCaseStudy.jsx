@@ -6,17 +6,24 @@ import PageHeading from '../components/PageHeading';
 import TextList from '../components/TextList';
 import ImageHeading from '../components/ImageHeading';
 import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
+import LoopingVideo from '../components/LoopingVideo';
+import { useEffect } from 'react';
+
 
 function CandyverseCaseStudy() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
     return (
         <main>
             <Navbar></Navbar>
             <HeroCS
-                title="Candyverse, a candy clicking game for kids"
-                subtitle="Designing expressive voice output for users with speech impairments"
+                title="Candyverse: Designing Playful Worlds for Curious Minds"
+                subtitle="An exploration of interactive 3D environments built with Three.js and JavaScript"
                 role="Design, Programming"
                 date="2025"
-                image="src/assets/ACC_image.png"
+                image="src/assets/ProjectCard_Candyverse.png"
             />
 
             <IntroHeading
@@ -61,9 +68,9 @@ function CandyverseCaseStudy() {
             />
 
             <ImageHeading
-                headline="New Design"
+                headline="The Candyverse by Skybox AI"
                 title=""
-                image="src/assets/2025Portfolio_AAC_After.png"
+                image="src/assets/2025Portfolio_Candyverse_Universe.webp"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
@@ -101,11 +108,11 @@ function CandyverseCaseStudy() {
                     "The transition animation was custom-scripted to feel like a joyful lift-off, using camera movement and easing curves in Three.js for smooth motion."
                 ]}
             />
-            <ImageHeading
-                headline="New Design"
-                title=""
-                image="src/assets/2025Portfolio_AAC_After.png"
-                alt="Screenshot of AAC interface with popup voice styling menu"
+
+            <LoopingVideo
+                src="src/assets/Candyverse_Transitions.mp4"
+                poster=""
+                className="case-study-hero-video"
             />
 
             <TextHeading
@@ -169,6 +176,12 @@ function CandyverseCaseStudy() {
                 ]}
             />
 
+            <ImageHeading
+                headline="Architecture Diagram"
+                title=""
+                image="src/assets/Candyverse_ArchitectureDiagram.png"
+            />
+
             <PageHeading
                 title="Make it Fast, Keep it Magical"
             />
@@ -216,6 +229,12 @@ function CandyverseCaseStudy() {
                 ]}
             />
 
+            <ImageHeading
+                headline="From 128MB to 1.9 MB, can you tell the difference?"
+                title=""
+                image="src/assets/Candyverse_QualityDifference.png"
+            />
+
             <PageHeading
                 title="Reflections & Next Steps"
             />
@@ -251,13 +270,18 @@ function CandyverseCaseStudy() {
                     "Explore the Universe: Turn the linear world progression into an explorable map or galaxy — giving players more freedom and replayability."
                 ]}
             />
+
+            <ImageHeading
+                headline="Gumdrop World"
+                title=""
+                image="src/assets/Candyverse_NextSteps.png"
+            />
             <NextCaseStudyFooter
                 nextTitle="Next Case Study >>"
                 nextPath="/aac"
             />
+
         </main>
-
-
 
     )
 }

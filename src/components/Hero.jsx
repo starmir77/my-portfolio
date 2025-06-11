@@ -13,7 +13,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className="hero-section">
+        <section className="hero-section"id="hero">
             <h1 className="hero-title">
                 Rafaela Baquero
             </h1>

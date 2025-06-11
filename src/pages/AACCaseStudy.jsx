@@ -8,19 +8,29 @@ import PageHeading from '../components/PageHeading';
 import QuoteGroup from '../components/QuoteGroup';
 import IntroHeading from '../components/IntroHeading';
 import EmbedFrame from '../components/EmbedFrame';
+import LoopingVideo from '../components/LoopingVideo';
 import Navbar from '../components/Navbar';
+import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
+import { useEffect } from 'react';
+
 
 function AACCaseStudy() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, []);
+
     return (
         <main>
 
             <Navbar></Navbar>
             <HeroCS
-                title="AAC Humor Prototype"
-                subtitle="Designing expressive voice output for users with speech impairments"
+                title="Designing Sarcasm: Reclaiming Voice, Humour & Identity"
+                subtitle="An exploration of expressive speech technology for users of Augmentative and Alternative Communication"
                 role="Design, Prototyping"
-                date="2024"
+                date="2025"
                 image="src/assets/ACC_image.png"
+                githubUrl="https://github.com/starmir77/AAC-Prototype"
+                prototypeUrl= "https://aac-prototype.vercel.app/"
             />
 
             <IntroHeading
@@ -257,6 +267,13 @@ function AACCaseStudy() {
                 ]}
             />
 
+            <LoopingVideo
+                src="src/assets/AAC_caseStudyVideo.mp4"
+                poster="src/assets/AAC_videoPoster.png"
+                className="case-study-hero-video"
+                muted={false}
+            />
+
             <PageHeading
                 title=" Try it Yourself"
             />
@@ -271,6 +288,8 @@ function AACCaseStudy() {
                 ]}
             />
 
+
+
             <EmbedFrame
                 url="https://aac-prototype.vercel.app"
                 title="Functional Prototype"
@@ -283,12 +302,8 @@ function AACCaseStudy() {
             <TextHeading
                 headline=""
                 title=""
-                body={
-                    <>
-                        <p>The final prototype delivered on its goal: empowering AAC users with a way to infuse humor, sarcasm, and personality into their speech. By focusing on how something is said — not just what is said — the tool opens up new dimensions of self-expression, creating room for nuance, tone, and playfulness in a space often defined by limitation.</p>
-                        <p>Designing for people with disabilities reminds us that design is never just functional — it’s emotional, contextual, and deeply human. Even when accessibility isn’t the focus, this perspective helps us see that our work shapes more than interactions. It shapes connection. Whether we’re crafting voice, movement, or interface, behind every experience is a person trying to be understood — and our responsibility is to make space for their full expression.</p>
-                    </>
-                }
+                body="The final prototype delivered on its goal: empowering AAC users with a way to infuse humor, sarcasm, and personality into their speech. By focusing on how something is said — not just what is said — the tool opens up new dimensions of self-expression, creating room for nuance, tone, and playfulness in a space often defined by limitation. Designing for people with disabilities reminds us that design is never just functional — it’s emotional, contextual, and deeply human. Even when accessibility isn’t the focus, this perspective helps us see that our work shapes more than interactions. It shapes connection. Whether we’re crafting voice, movement, or interface, behind every experience is a person trying to be understood — and our responsibility is to make space for their full expression."
+
             />
 
             <TextList

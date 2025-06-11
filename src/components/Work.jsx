@@ -8,18 +8,19 @@ export default function Work() {
         <h2 className="work-title">Selected Work</h2>
         <div className="card-wrapper">
           <ProjectCard
-            title="Candyverse"
-            description="A playful 3D game using Three.js, WebGL, and sound interaction. Deployed on Vercel."
+            title="Candyverse, Designing Playful Worlds for Curious Minds"
+            description="An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel"
             caseStudyLink={
               <Link to="/candyverse" className="case-study-button">
                 View Case Study
               </Link>
             }
             subtitle="Design, Javascript, Three.JS"
+            imageSrc= "src/assets/ProjectCard_Candyverse.png"
           />
           <ProjectCard
-            title="Adding Humor in Assistive Devices"
-            description="A portfolio prototype combining voice UI and AI-driven humor delivery (Alexa-style)."
+            title="Designing Sarcasm: Reclaiming Voice, Humour & Identity"
+            description="Reimagining AAC voice design—shaped by user research and built with vanilla JavaScript and Amazon Polly"
             caseStudyLink={
               <Link to="/aac" className="case-study-button">
                 View Case Study
@@ -27,6 +28,7 @@ export default function Work() {
 
             }
             subtitle="Design, Javascript, Voice API"
+            imageSrc="src/assets/ProjectCard_AAC.png"
           />
 
           <ProjectCard

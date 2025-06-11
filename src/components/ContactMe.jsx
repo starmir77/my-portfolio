@@ -4,7 +4,7 @@ export default function ContactMe() {
       <h2 className="contact-heading">Let's Connect</h2>
       <p className="contact-text">
         Whether you have an idea, a question, or just want to say hi — feel free to{" "}
-        <a href="mailto:your.email@example.com" className="contact-link">email me</a>.
+        <a href="mailto:rafaellabaquero@gmail.com?subject=Portfolio Inquiry" className="contact-link">email me</a>.
       </p>
       <div className="contact-icons">
         <a

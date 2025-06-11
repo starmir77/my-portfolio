@@ -13,9 +13,24 @@ function Navbar() {
         </button>
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
-          <a href="#work" className="nav-link" onClick={() => setIsOpen(false)}>Work</a>
-          <a href="#contact" className="nav-link" onClick={() => setIsOpen(false)}>Contact Me</a>
-          {/* Add more links as you add more pages */}
+
+          <Link
+            to={{ pathname: '/' }}
+            state={{ scrollTo: 'work' }}
+            className="nav-link"
+            onClick={() => setIsOpen(false)}
+          >
+            Work
+          </Link>
+
+          <Link
+            to={{ pathname: '/' }}
+            state={{ scrollTo: 'contact' }}
+            className="nav-link"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact Me
+          </Link>
         </div>
       </div>
     </nav>
