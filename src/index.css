@@ -1,17 +1,15 @@
 :root {
   /* === Font Families === */
   --font-primary: 'Sarala', sans-serif;
-  /* Used for headings like Hero Title */
   --font-secondary: 'Source Sans Pro', sans-serif;
-  /* Used for body text and subtitles */
   --font-serif: 'Playfair Display', serif;
-  /* Used for case study pages */
 
   /* === Colors === */
   --color-bg: #000;
   --color-text-light: #f3f3f3;
   --color-text-muted: #ccc;
   --color-text-secondary: #999;
+
   /* Used for metadata, eyebrow text, etc. */
   --color-white: white;
   --color-black: black;
@@ -20,11 +18,8 @@
 
 
   --color-gradient-start: #ec4899;
-  /* Pink */
   --color-gradient-mid: #38bdf8;
-  /* Sky blue */
   --color-gradient-end: #8b5cf6;
-  /* Violet */
 
   --color-border-light: rgba(255, 255, 255, 0.1);
   --color-shadow-light: rgba(255, 255, 255, 0.05);
@@ -32,25 +27,20 @@
 
   /* === Typography Sizes === */
   --text-h1: 3.75rem;
-  /* Hero Title (60px) for md+ */
   --text-h1-mobile: 2.5rem;
-  /* Hero Title mobile */
-
   --text-h2: 2.5rem;
-  /* Section headings like “Selected Work” */
-  --text-h3: 1.125rem;
-  /* Project card titles */
-
+  --text-h3: 1.5rem;
   --text-subtitle: 1.5rem;
-  /* Hero subtitle (md+) */
   --text-subtitle-mobile: 1.25rem;
 
   --text-body: 1.125rem;
-  /* Hero description (md+) */
   --text-body-mobile: 1rem;
+  --text-small: 0.9rem;
 
-  --text-small: 0.875rem;
-  /* Project card descriptions */
+  --padding-left: 5rem;
+  --padding-left-bs: 10rem;
+  --padding-left-ss: 1.5rem;
+
 }
 
 
@@ -70,7 +60,7 @@ html {
   width: 100%;
   background-color: var(--color-black);
   z-index: 1000;
-  padding: 1rem 0;
+  padding: 2rem 0rem;
 }
 
 .navbar-container {
@@ -124,6 +114,12 @@ html {
   background: none;
 }
 
+@media (max-width: 600px) {
+  .navbar-container {
+    padding-right: 40px;
+  }
+}
+
 
 /* === Hero Section === */
 
@@ -136,17 +132,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0rem;
+  padding-left: var(--padding-left);
 }
 
 .hero-title {
   font-family: var(--font-primary);
-  font-size: var(--text-h1-mobile);
+  font-size: var(--text-h1);
   font-weight: 800;
-  background-image: linear-gradient(to right,
-      var(--color-gradient-start),
-      var(--color-gradient-mid),
-      var(--color-gradient-end));
+  background-image: var(--gradient-accent);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,7 +148,7 @@ html {
 
 .hero-subtitle {
   font-family: var(--font-secondary);
-  font-size: var(--text-subtitle-mobile);
+  font-size: var(--text-subtitle);
   font-weight: 500;
   margin-bottom: 0.75rem;
 }
@@ -163,29 +156,63 @@ html {
 .hero-description {
   font-family: var(--font-secondary);
   margin-top: 1rem;
-  max-width: 42rem;
+  max-width: 48rem;
   color: var(--color-text-muted);
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
   line-height: 1.75;
 }
 
-/* === Media Queries (min-width: 768px) === */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
   .hero-section {
-    padding: 4rem 2.5rem;
+    min-height: 100vh;
+    width: 90%;
+    padding: 0rem var(--padding-left-ss);
   }
 
   .hero-title {
-    font-size: var(--text-h1);
+    font-family: var(--font-primary);
+    font-size: 2.65rem;
+    font-weight: 800;
+    margin-bottom: -1.35rem;
+    line-height: 3.5rem;
   }
 
   .hero-subtitle {
-    font-size: var(--text-subtitle);
+    font-size: 1.45rem;
+    margin-bottom: 0.75rem;
   }
 
   .hero-description {
-    font-size: var(--text-body);
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
   }
+
+}
+
+@media (min-width: 1440px) {
+  .hero-section {
+    padding-left: var(--padding-left-bs);
+  }
+
+  .hero-title {
+    font-family: var(--font-primary);
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: -1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-description {
+    margin-top: 1rem;
+    font-size: 1.15rem;
+    line-height: 1.75;
+  }
+
 }
 
 
@@ -201,7 +228,7 @@ html {
   color: var(--color-text-light);
   box-sizing: border-box;
   overflow: hidden;
-  gap: 1.75rem;
+  gap: 0rem;
 }
 
 .hero-cs-image-container {
@@ -225,10 +252,10 @@ html {
 }
 
 .hero-cs-text {
-  flex-basis: 30%;
+  flex-basis: 35%;
   padding: 3rem 2rem;
   box-sizing: border-box;
-  padding-left: 1rem;
+  padding-left: 0rem;
 
 }
 
@@ -258,7 +285,6 @@ html {
   display: flex;
   gap: 1rem;
   margin-top: 1.25rem;
-  /* spacing above, optional */
 }
 
 .hero-cs-link {
@@ -277,22 +303,39 @@ html {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .hero-cs {
     flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hero-cs-image-container {
-    flex: none;
-    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
     width: 100%;
+    padding: 2rem 1rem 0rem 1rem;
+  }
+
+  .hero-cs-image {
+    max-width: 95%;
+    max-height: none;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+
   }
 
   .hero-cs-text {
-    flex: none;
-    padding: 2rem 1.5rem;
+    padding: 0rem 1.5rem;
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -309,8 +352,12 @@ html {
   font-size: var(--text-small);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-text-secondary);
-  margin-bottom: 0.5rem;
+  background-image: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  opacity: 0.7;
 }
 
 .text-heading-title {
@@ -321,7 +368,7 @@ html {
 }
 
 .text-heading-body {
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
   line-height: 1.6;
   color: var(--color-text-muted);
 }
@@ -412,7 +459,7 @@ html {
 }
 
 .text-list-text {
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
   color: var(--color-text-muted);
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -425,7 +472,7 @@ html {
 }
 
 .text-list-item {
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
   line-height: 1.6;
   margin-bottom: 0.5rem;
 }
@@ -458,7 +505,7 @@ html {
 }
 
 .key-points-item {
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
   line-height: 1.7;
   margin-bottom: 0.75rem;
   position: relative;
@@ -510,7 +557,7 @@ html {
 ====================================================== */
 
 .intro-heading {
-  background-color: var(--color-white);
+  background-color: var(--color-text-light);
   color: var(--gradient-accent);
   width: 100%;
   padding: 4rem 0;
@@ -524,11 +571,15 @@ html {
 }
 
 .intro-heading-eyebrow {
-  font-size: 0.875rem;
+  font-size: var(--text-small);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--gradient-accent);
   margin-bottom: 0.5rem;
+  background-image: var(--gradient-accent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
 .intro-heading-title {
@@ -539,7 +590,7 @@ html {
 }
 
 .intro-heading-body {
-  font-size: 1rem;
+  font-size: var(--text-body);
   line-height: 1.6;
   color: #222;
 }
@@ -614,34 +665,14 @@ html {
   box-shadow: 0 4px 12px var(--color-shadow-hover);
 }
 
-.card-border-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0px;
-  width: 100%;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  background: var(--gradient-accent);
-}
-
-.card-border-left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0px;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  background: var(--color-gradient-start);
-}
 
 .card-title {
   font-family: var(--font-primary);
   font-size: var(--text-subtitle-mobile);
   font-weight: bold;
-  color: var(--color-text-light);
+  color: var(--color-text-muted);
   margin-bottom: 0.5rem;
+  line-height: 1.85rem;
 }
 
 .card-description {
@@ -699,6 +730,18 @@ html {
   letter-spacing: 0.03em;
 }
 
+@media (max-width: 600px) {
+  .project-card {
+
+    padding: 1.5rem 1.75rem;
+    border-radius: 0.55rem;
+    transition: box-shadow 0.3s ease;
+    border: 1px solid var(--color-text-secondary);
+
+  }
+
+}
+
 
 /* ======================================================
    Work Section
@@ -709,6 +752,7 @@ html {
   min-height: 100vh;
   background-color: var(--color-black);
   color: var(--color-white);
+  padding-left: var(--padding-left);
 }
 
 .section-container {
@@ -732,15 +776,49 @@ html {
   grid-template-columns: 1fr;
 }
 
+@media (max-width: 600px) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+
+  .project-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .work-title {
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .work-section {
+    padding-left: 0rem;
+  }
+
+}
+
 @media (min-width: 768px) {
   .card-wrapper {
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  .section-container {
-    padding: 4rem 2.5rem;
+@media (min-width: 1440px) {
+  .work-section {
+    padding-left: var(--padding-left-bs);
   }
 }
+
+
 
 /* ======================================================
    Next Case Study Footer Section
@@ -822,7 +900,7 @@ html {
 }
 
 /* =====================================
-About Me Section
+Contact Me Section
 =======================================*/
 
 .contact-section {
@@ -833,6 +911,7 @@ About Me Section
   justify-content: center;
   align-items: flex-start;
   font-family: var(--font-secondary);
+  padding-left: var(--padding-left);
 
 }
 
@@ -845,7 +924,7 @@ About Me Section
 
 .contact-text {
   color: var(--color-text-muted);
-  font-size: var(--text-body-mobile);
+  font-size: var(--text-body);
 }
 
 .contact-link {
@@ -880,9 +959,16 @@ About Me Section
   text-decoration: underline;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
   .contact-section {
-    padding: 0rem 3rem;
+    padding-left: 1.5rem;
+    width: 90%
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact-section {
+    padding-left: var(--padding-left-bs);
   }
 }
 
@@ -891,10 +977,16 @@ About Me Section
 .case-study-hero-video {
   width: 100%;
   max-width: 700px;
-  /* or whatever fits your layout */
   margin: 3rem auto 3rem;
   border-radius: 1rem;
   object-fit: cover;
-  /* ensure it fills the box */
   display: block;
+}
+
+@media (max-width: 600px) {
+  .case-study-hero-video {
+    width: 90%;
+    padding: 0rem 1.5rem;
+    border-radius: 1rem;
+  }
 }

@@ -24,6 +24,8 @@ function CandyverseCaseStudy() {
                 role="Design, Programming"
                 date="2025"
                 image="/assets/ProjectCard_Candyverse.png"
+                githubUrl="https://github.com/starmir77/CandyWorld--"
+                prototypeUrl= "https://candy-world-eight.vercel.app/"
             />
 
             <IntroHeading

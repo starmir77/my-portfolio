@@ -8,7 +8,7 @@ export default function Work() {
         <h2 className="work-title">Selected Work</h2>
         <div className="card-wrapper">
           <ProjectCard
-            title="Candyverse, Designing Playful Worlds for Curious Minds"
+            title="Candyverse, Designing Playful Worlds for Young Minds"
             description="An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel"
             caseStudyLink={
               <Link to="/candyverse" className="case-study-button">
