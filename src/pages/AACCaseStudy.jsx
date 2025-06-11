@@ -28,7 +28,7 @@ function AACCaseStudy() {
                 subtitle="An exploration of expressive speech technology for users of Augmentative and Alternative Communication"
                 role="Design, Prototyping"
                 date="2025"
-                image="src/assets/ACC_image.png"
+                image="/assets/ACC_image.png"
                 githubUrl="https://github.com/starmir77/AAC-Prototype"
                 prototypeUrl= "https://aac-prototype.vercel.app/"
             />
@@ -152,14 +152,14 @@ function AACCaseStudy() {
             <ImageHeading
                 headline=""
                 title=""
-                image="src/assets/2015Portfolio_AAC_paperProt.jpg"
+                image="/assets/2015Portfolio_AAC_paperProt.jpg"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
             <ImageHeading
                 headline=""
                 title=""
-                image="src/assets/2025Portfolio_AAC_Image1.png"
+                image="/assets/2025Portfolio_AAC_Image1.png"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
@@ -184,7 +184,7 @@ function AACCaseStudy() {
             <ImageHeading
                 headline=""
                 title=""
-                image="src/assets/Frame 13.png"
+                image="/assets/Frame 13.png"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
@@ -220,14 +220,14 @@ function AACCaseStudy() {
             <ImageHeading
                 headline="New Design"
                 title=""
-                image="src/assets/2025Portfolio_AAC_After.png"
+                image="/assets/2025Portfolio_AAC_After.png"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
             <ImageHeading
                 headline="Previous Design"
                 title=""
-                image="src/assets/2025Portfolio_AAC_Before.png"
+                image="/assets/2025Portfolio_AAC_Before.png"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
@@ -268,10 +268,11 @@ function AACCaseStudy() {
             />
 
             <LoopingVideo
-                src="src/assets/AAC_caseStudyVideo.mp4"
-                poster="src/assets/AAC_videoPoster.png"
+                src="/assets/AAC_caseStudyVideo.mp4"
+                poster="/assets/AAC_videoPoster.png"
                 className="case-study-hero-video"
                 muted={false}
+                autoPlay={false}
             />
 
             <PageHeading

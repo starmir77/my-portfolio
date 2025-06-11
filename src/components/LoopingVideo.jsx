@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function LoopingVideo({ src, className, poster, muted = true }) {
+export default function LoopingVideo({ src, className, poster, muted = true, autoPlay = true}) {
     return (
         <video
 
             src={src}
             poster={poster}
-            autoPlay
+            autoPlay ={autoPlay}
             loop
             muted={muted}
             playsInline
