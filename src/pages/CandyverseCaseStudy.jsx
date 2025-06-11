@@ -23,7 +23,7 @@ function CandyverseCaseStudy() {
                 subtitle="An exploration of interactive 3D environments built with Three.js and JavaScript"
                 role="Design, Programming"
                 date="2025"
-                image="src/assets/ProjectCard_Candyverse.png"
+                image="/assets/ProjectCard_Candyverse.png"
             />
 
             <IntroHeading
@@ -70,7 +70,7 @@ function CandyverseCaseStudy() {
             <ImageHeading
                 headline="The Candyverse by Skybox AI"
                 title=""
-                image="src/assets/2025Portfolio_Candyverse_Universe.webp"
+                image="/assets/2025Portfolio_Candyverse_Universe.webp"
                 alt="Screenshot of AAC interface with popup voice styling menu"
             />
 
@@ -110,7 +110,7 @@ function CandyverseCaseStudy() {
             />
 
             <LoopingVideo
-                src="src/assets/Candyverse_Transitions.mp4"
+                src="/assets/Candyverse_Transitions.mp4"
                 poster=""
                 className="case-study-hero-video"
             />
@@ -179,7 +179,7 @@ function CandyverseCaseStudy() {
             <ImageHeading
                 headline="Architecture Diagram"
                 title=""
-                image="src/assets/Candyverse_ArchitectureDiagram.png"
+                image="/assets/Candyverse_ArchitectureDiagram.png"
             />
 
             <PageHeading
@@ -232,7 +232,7 @@ function CandyverseCaseStudy() {
             <ImageHeading
                 headline="From 128MB to 1.9 MB, can you tell the difference?"
                 title=""
-                image="src/assets/Candyverse_QualityDifference.png"
+                image="/assets/Candyverse_QualityDifference.png"
             />
 
             <PageHeading
@@ -274,7 +274,7 @@ function CandyverseCaseStudy() {
             <ImageHeading
                 headline="Gumdrop World"
                 title=""
-                image="src/assets/Candyverse_NextSteps.png"
+                image="/assets/Candyverse_NextSteps.png"
             />
             <NextCaseStudyFooter
                 nextTitle="Next Case Study >>"

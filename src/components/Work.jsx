@@ -16,7 +16,7 @@ export default function Work() {
               </Link>
             }
             subtitle="Design, Javascript, Three.JS"
-            imageSrc= "src/assets/ProjectCard_Candyverse.png"
+            imageSrc= "/assets/ProjectCard_Candyverse.png"
           />
           <ProjectCard
             title="Designing Sarcasm: Reclaiming Voice, Humour & Identity"
@@ -28,7 +28,7 @@ export default function Work() {
 
             }
             subtitle="Design, Javascript, Voice API"
-            imageSrc="src/assets/ProjectCard_AAC.png"
+            imageSrc="/assets/ProjectCard_AAC.png"
           />
 
           <ProjectCard
