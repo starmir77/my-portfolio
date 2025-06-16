@@ -3,8 +3,11 @@ import Home from "./pages/Home.jsx";
 import AACCaseStudy from "./pages/AACCaseStudy.jsx";
 import CandyverseCaseStudy from "./pages/CandyverseCaseStudy.jsx";
 import Footer from "./components/Footer.jsx";
+import useGATracking from "./useGATracking.js";
 
 function App() {
+  useGATracking();
+
   return (
     <>
       <Routes>

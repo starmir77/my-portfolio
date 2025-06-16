@@ -33,13 +33,14 @@ export default function Work() {
 
           <ProjectCard
             title="Movement as Art with Gesture Recognition"
-            description="A gesture-driven art experience for Meta Quest — exploring movement as expression."
+            description="Exploring embodied interaction on Meta Quest—built in Unity with hand tracking, XR Toolkit, Meta’s SDK, and AI-powered gesture recognition."
             caseStudyLink={
               <Link to="/aac" className="case-study-button">
                 View Case Study
               </Link>
             }
             subtitle="Design, Meta's Presence SDK"
+            imageSrc="/assets/ProjectCard_ComingSoon_bw.png"
           />
         </div>
       </div>
