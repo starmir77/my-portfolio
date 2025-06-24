@@ -319,7 +319,7 @@ function AACCaseStudy() {
 
             <NextCaseStudyFooter
                 nextTitle="Next Case Study >>"
-                nextPath="/candyverse"
+                nextPath="/stilaxr"
             />
 
         </main>

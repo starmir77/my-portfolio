@@ -1,26 +1,25 @@
-export default function ContactMe() {
+export default function ContactMe({ contact }) {
+  const { title, body, email, links } = contact;
+
   return (
     <section className="contact-section" id="contact">
-      <h2 className="contact-heading">Let's Connect</h2>
+      <h2 className="contact-heading">{title}</h2>
       <p className="contact-text">
-        Whether you have an idea, a question, or just want to say hi — feel free to{" "}
-        <a href="mailto:rafaellabaquero@gmail.com?subject=Portfolio Inquiry" className="contact-link">email me</a>.
+        {body}{" "}
+        <a href={`mailto:${email.address}?subject=${encodeURIComponent(email.subject)}`}
+          className="contact-link">{email.label}</a>.
       </p>
       <div className="contact-icons">
-        <a
-          href="https://www.linkedin.com/in/rafaelabaquero/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://github.com/starmir77"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+        {links.map((link) =>
+          <a
+            key={link.label}
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {link.label}
+          </a>
+        )}
       </div>
     </section>
   );

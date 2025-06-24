@@ -1,28 +1,39 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 
-const titles = ["Designer", "Coder", "Creative Technologist"];
+export default function Hero({ heroInfo }) {
+    const { title, subtitle, body, links } = heroInfo;
 
-export default function Hero() {
     const [currentTitle, setCurrentTitle] = useState(0);
 
     useEffect(() => {
+
+        if (!subtitle || !subtitle.length) return;
+
         const interval = setInterval(() => {
-            setCurrentTitle((prev) => (prev + 1) % titles.length);
+            setCurrentTitle((prev) => (prev + 1) % subtitle.length);
         }, 2000);
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <section className="hero-section"id="hero">
+        <section className="hero-section" id="hero">
             <h1 className="hero-title">
-                Rafaela Baquero
+                {title}
             </h1>
             <p className="hero-subtitle">
-                {titles[currentTitle]}
+                {subtitle[currentTitle]}
             </p>
             <p className="hero-description">
-                I started in product management, built and launched a startup in AR, and realized I was most fulfilled when designing and building hands-on. I’ve since shifted focus toward creative technology — blending design, code, and storytelling to craft expressive, interactive experiences.
+                {body}
             </p>
+            <div className="hero-button-container">
+                {links.map((entry) => (
+                    <a href={entry.url} className="hero-button" key={entry.id}>
+                        {entry.label}
+                    </a>
+                ))}
+            </div>
         </section>
 
     );
