@@ -1,7 +1,7 @@
 export const intro = {
     title: "Rafaela Baquero",
     subtitle: ["Designer", "Coder", "Creative Technologist"],
-    body: "I started in product management, built and launched a startup in AR, and realized I was most fulfilled when designing and building hands-on. I’ve since shifted focus toward creative technology — blending design, code, and storytelling to craft expressive, interactive experiences.",
+    body: "I started in product management, built a startup in the AR space, and realized I was most fulfilled when designing and building hands-on. I’ve since shifted focus toward creative technology—blending design, code, and emerging tech to build products and experiences that push boundaries.",
     links: [
         {
             id: "work",
