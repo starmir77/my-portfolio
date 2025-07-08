@@ -28,9 +28,9 @@ function AACCaseStudy() {
                 subtitle="An exploration of expressive speech technology for users of Augmentative and Alternative Communication"
                 role="Design, Prototyping"
                 date="2025"
-                image="/assets/ACC_image.png"
+                image="/assets/AAC_mainImage.png"
                 githubUrl="https://github.com/starmir77/AAC-Prototype"
-                prototypeUrl= "https://aac-prototype.vercel.app/"
+                prototypeUrl="https://aac-prototype.vercel.app/"
             />
 
             <IntroHeading
@@ -267,33 +267,22 @@ function AACCaseStudy() {
                 ]}
             />
 
-            <LoopingVideo
-                src="/assets/AAC_caseStudyVideo.mp4"
-                poster="/assets/AAC_videoPoster.png"
-                className="case-study-hero-video"
-                muted={false}
-                autoPlay={false}
-            />
 
             <PageHeading
-                title=" Try it Yourself"
+                title=" Try The Final Version Yourself"
             />
 
             <TextList
-                text="Experiment with humour:"
+                text="Experiment with emotion & humour:"
                 items={[
                     "Type a sentence",
                     "Click on the word you wish you add an effect to",
                     "Select the effect you wish to add",
+                    "Or add an emotion to the entire sentence",
                     "Click Play"
                 ]}
-            />
-
-
-
-            <EmbedFrame
-                url="https://aac-prototype.vercel.app"
-                title="Functional Prototype"
+                buttonUrl="https://aac-prototype.vercel.app/"
+                buttonLabel="Navigate to Prototype"
             />
 
             <PageHeading
