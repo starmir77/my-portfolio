@@ -11,8 +11,7 @@ function HeroCS({ title, subtitle, role, date, image, githubUrl, prototypeUrl })
         <h1 className="hero-cs-title">{title}</h1>
         <p className="hero-cs-meta">
           <span>{role}</span> · <span>{date}</span>
-          <p className="hero-cs-subtitle">{subtitle}</p>
-
+          <span><p className="hero-cs-subtitle">{subtitle}</p></span>
         </p>
 
         {/* Optional GitHub and Prototype links */}

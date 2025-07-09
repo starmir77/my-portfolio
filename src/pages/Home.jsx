@@ -5,35 +5,14 @@ import ContactMe from "../components/ContactMe";
 import { contactMe, intro, workProjects, workTitle } from "../data/homePage";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import CanvasHero from "../components/CanvasHero";
 
 function Home() {
-  const location = useLocation();
-
-  useEffect(() => {
-    const scrollTo = location.state?.scrollTo;
-    if (scrollTo) {
-      const el = document.getElementById(scrollTo);
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  }, [location]);
-
   return (
     <>
       <Navbar />
-      <Hero
-        heroInfo={intro}
-      />
-      <Work
-        title={workTitle}
-        work={workProjects}
-      />
-      <ContactMe
-        contact={contactMe}
-      />
+      <div style={{ position: 'relative', minHeight: '100vh' }}><CanvasHero></CanvasHero></div>
+
     </>
   );
 }
