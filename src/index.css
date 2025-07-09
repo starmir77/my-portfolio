@@ -1083,3 +1083,36 @@ Contact Me Section
     0 0 20px 4px rgba(59, 130, 246, 0.3),
     0 0 30px 6px rgba(139, 92, 246, 0.3);
 }
+
+
+/* HERO TEXT OVERLAY */
+
+.hero-text-overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-name {
+  font-size: 5vw;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding: 0;
+}
+
+.letter {
+  display: inline-block;
+  
+  transform: translateY(20px);
+}
+
+.space {
+  display: inline-block;
+  width: 0.5em;
+}

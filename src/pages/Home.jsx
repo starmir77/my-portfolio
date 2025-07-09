@@ -6,13 +6,16 @@ import { contactMe, intro, workProjects, workTitle } from "../data/homePage";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CanvasHero from "../components/CanvasHero";
+import HeroTextOverlay from "../components/HeroTextOverlay";
 
 function Home() {
   return (
     <>
       <Navbar />
-      <div style={{ position: 'relative', minHeight: '100vh' }}><CanvasHero></CanvasHero></div>
-
+      <div style={{ position: 'relative', minHeight: '100vh', overflow: 'hidden' }}>
+        <CanvasHero />
+        <HeroTextOverlay />
+      </div>
     </>
   );
 }
