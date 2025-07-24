@@ -26,7 +26,7 @@ export const workProjects = [
         subtitle: "Javascript, Three.JS, Gen-AI",
         description: "An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel.",
         imagesrc: "/assets/ProjectCard_Candyverse.png",
-        caseStudyPath: "/candyverse"
+        caseStudyPath: "/candyverse",
     },
 
     {
@@ -45,7 +45,7 @@ export const workProjects = [
         description: "An iOS AR app that helps homebuyers visualize unfurnished properties—built with Unity, C#, and Cloud Content Delivery.",
         imagesrc: "/assets/ProjectCard_StilaXR.png",
         caseStudyPath: "/stilaxr"
-    },
+    }
 
 ]
 

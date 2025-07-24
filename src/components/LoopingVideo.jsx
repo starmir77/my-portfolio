@@ -12,6 +12,7 @@ export default function LoopingVideo({ src, className, poster, muted = true, aut
             playsInline
             controls = {!muted}
             className={className}
+            style={{ width: "100%", height: "auto", display: "block" }}
         />
     );
 }

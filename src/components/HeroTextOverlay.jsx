@@ -1,45 +1,54 @@
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
+gsap.registerPlugin(ScrambleTextPlugin);
 
 export default function HeroTextOverlay() {
-  const textRef = useRef(null);
-  const name = "Rafa Baquero";
+  const scrambleRef = useRef(null);
+  const roles = ["Design Technologist", "Designer", "Coder"];
 
   useEffect(() => {
-    if (!textRef.current) {
-      console.log("❌ textRef is null");
-      return;
-    }
+    if (!scrambleRef.current) return;
 
-    const letters = textRef.current.querySelectorAll('.letter');
-    console.log("✅ Letters found:", letters.length);
+    let index = 0;
+    let isCancelled = false;
 
-    gsap.fromTo(
-      letters,
-      { y: 60, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.6,
-        ease: 'power2.out',
-        stagger: 0.05,
-      }
-    );
+    const loop = () => {
+      gsap.to(scrambleRef.current, {
+        scrambleText: {
+          text: roles[index],
+          chars: "upperCase",
+          speed: 0.3,
+          revealDelay: 0.2,
+        },
+        duration: 2,
+        ease: "power2.out",
+        onComplete: () => {
+          index = (index + 1) % roles.length;
+          setTimeout(loop, 1000); // delay before next word
+        },
+      });
+    };
+
+    document.fonts.ready.then(() => {
+      if (!isCancelled) loop();
+    });
+
+    return () => {
+      isCancelled = true;
+    };
   }, []);
 
   return (
     <div className="hero-text-overlay">
-      <h1 ref={textRef} className="hero-name">
-        {name.split("").map((char, index) => (
-          <span
-            key={index}
-            className={`letter ${char === " " ? "space" : ""}`}
-          >
-            {char}
-          </span>
-        ))}
-      </h1>
+      <div className="hero-text-wrapper">
+        <h1>Rafaela Baquero</h1>
+        <h2 ref={scrambleRef}>Designer</h2>
+        <p>
+          I started in product management, built a startup in the AR space, and realized I was most fulfilled when designing and building hands-on. I’ve since shifted focus toward creative technology—blending design, code, and emerging tech to build products and experiences that push boundaries.
+        </p>
+      </div>
     </div>
   );
 }

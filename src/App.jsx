@@ -5,6 +5,7 @@ import CandyverseCaseStudy from "./pages/CandyverseCaseStudy.jsx";
 import StilaXRCaseStudy from "./pages/StilaXRCaseStudy.jsx";
 import Footer from "./components/Footer.jsx";
 import useGATracking from "./useGATracking.js";
+import FTCaseStudy from "./pages/FTCaseStudy.jsx";
 
 function App() {
   useGATracking();
@@ -16,8 +17,8 @@ function App() {
         <Route path="/aac" element={<AACCaseStudy />} />
         <Route path="/candyverse" element={<CandyverseCaseStudy />} />
         <Route path="/stilaxr" element={<StilaXRCaseStudy />} />
+        <Route path="/friendlytransfer" element={<FTCaseStudy />} />
       </Routes>
-      <Footer />
     </>
   );
 }
