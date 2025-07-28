@@ -11,7 +11,7 @@ export const intro = {
         {
             id: "contact",
             label: "Contact Me",
-            url: "/#contact"
+            url: ""
         }
     ]
 };
@@ -22,20 +22,41 @@ export const workTitle = "Selected Work";
 export const workProjects = [
     {
         id: "candyverse",
-        title: "Candyverse, Designing Playful Worlds for Young Minds",
-        subtitle: "Javascript, Three.JS, Gen-AI",
-        description: "An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel.",
-        imagesrc: "/assets/ProjectCard_Candyverse.png",
-        caseStudyPath: "/candyverse",
+        title: "Designing Trust Into Peer-to-Peer Money Exchange",
+        subtitle: "UX Research · UX Design · Product Design",
+        description: "Designed a trust-first exchange flow for a peer-to-peer money platform, reducing user confusion and cutting support tickets by 45%.",
+        imagesrc: "/assets/ProjectCard_FT.png",
+        caseStudyPath: "/friendlytransfer",
     },
 
     {
         id: "aac",
         title: "Designing Sarcasm: Reclaiming Voice, Humour & Identity",
-        subtitle: "Javascript, Polly Voice API",
-        description: "Reimagining AAC voice design—shaped by user research and built with vanilla JavaScript and Amazon Polly.",
-        imagesrc: "/assets/ProjectCard_AAC.png",
+        subtitle: "UX Research · Interaction Design",
+        description: "Built an expressive text-to-speech interface for people with speech impairments, enabling nuanced communication through pitch, pacing, and emotion.",
+        imagesrc: "/assets/ProjectCard_AAC1.png",
         caseStudyPath: "/aac"
+    },
+
+    {
+        id: "stila",
+        title: "Redesigned for Speed: From Test to ROAS, in Half the Time",
+        subtitle: "Research · UX Design",
+        description: "Redesigned a fragmented ad creation workflow into an integrated experience, cutting launch time in half and increasing creative testing by 50%.",
+        imagesrc: "/assets/ProjectCard_AdRules.png",
+        caseStudyPath: "/advertisers"
+    }
+
+]
+
+export const workProjectsCode = [
+    {
+        id: "candyverse",
+        title: "Candyverse, Designing Playful Worlds for Young Minds",
+        subtitle: "Javascript, Three.JS, Gen-AI",
+        description: "An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel.",
+        imagesrc: "/assets/ProjectCard_Candyverse.png",
+        caseStudyPath: "/candyverse",
     },
 
     {

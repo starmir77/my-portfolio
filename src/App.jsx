@@ -3,9 +3,11 @@ import Home from "./pages/Home.jsx";
 import AACCaseStudy from "./pages/AACCaseStudy.jsx";
 import CandyverseCaseStudy from "./pages/CandyverseCaseStudy.jsx";
 import StilaXRCaseStudy from "./pages/StilaXRCaseStudy.jsx";
+import FTCaseStudy from "./pages/FTCaseStudy.jsx";
+import AdRulesCaseStudy from "./pages/AdRulesCaseStudy.jsx";
 import Footer from "./components/Footer.jsx";
 import useGATracking from "./useGATracking.js";
-import FTCaseStudy from "./pages/FTCaseStudy.jsx";
+
 
 function App() {
   useGATracking();
@@ -18,6 +20,7 @@ function App() {
         <Route path="/candyverse" element={<CandyverseCaseStudy />} />
         <Route path="/stilaxr" element={<StilaXRCaseStudy />} />
         <Route path="/friendlytransfer" element={<FTCaseStudy />} />
+        <Route path="/advertisers" element={<AdRulesCaseStudy />} />
       </Routes>
     </>
   );

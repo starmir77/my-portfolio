@@ -25,12 +25,20 @@ function Navbar() {
 
           <Link
             to={{ pathname: '/' }}
-            state={{ scrollTo: 'contact' }}
+            state={{ scrollTo: 'coding' }}
+            className="nav-link"
+            onClick={() => setIsOpen(false)}
+          >
+            Coding
+          </Link>
+
+          <a
+            href="mailto:rafaellabaquero@gmail.com?subject=Let's%20Connect"
             className="nav-link"
             onClick={() => setIsOpen(false)}
           >
             Contact Me
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

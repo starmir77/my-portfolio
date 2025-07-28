@@ -31,7 +31,7 @@ function AACCaseStudy() {
                     role="Design, Prototyping"
                     date="2025"
                     image="/assets/AAC_mainImage.png"
-                    githubUrl="https://github.com/starmir77/AAC-Prototype"
+                    githubUrl=""
                     prototypeUrl="https://aac-prototype.vercel.app/"
                 />
             </section>
@@ -332,7 +332,7 @@ function AACCaseStudy() {
             </div>
             <NextCaseStudyFooter
                 nextTitle="Next Case Study"
-                nextPath="/stilaxr"
+                nextPath="/advertisers"
             />
 
         </main>

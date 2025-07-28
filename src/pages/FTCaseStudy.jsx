@@ -27,22 +27,22 @@ function FTCaseStudy() {
             <section className="hero-canvas-wrapper">
                 <CanvasHero variant="scoped" />
                 <HeroCS
-                    title="Designing for Trust"
-                    subtitle="Facilitating money transfers without being a financial institution, FriendlyTransfer is a peer-to-peer online platform that helps users save international transaction costs by agreeing to make local transfers."
-                    role="Product Design, Experience Strategy"
-                    date="2024"
-                    image="/assets/FT_MainImage.png"
-                    githubUrl="https://github.com/yourusername/future-tech-platform"
-                    prototypeUrl="https://future-tech-platform.vercel.app/"
+                    title="Designing Trust into a Peer-to-Peer Money Transferring Platform"
+                    subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers — all without the backing of a financial institution. I designed a structured, step-by-step experience that built trust between strangers and reduced support inquiries by 45%."
+                    role="Reseach · Design · Usability Testing"
+                    date=""
+                    image="/assets/FT_MainCS.png"
+                    githubUrl=""
+                    prototypeUrl=""
                 />
             </section>
 
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
                 <IntroHeading
                     headline="OVERVIEW"
-                    problem="Modern teams face challenges in collaborating seamlessly across disciplines and time zones. Communication is often fragmented and creativity is hampered by rigid tools."
-                    solution="Designed and prototyped a flexible workspace platform that merges real-time collaboration with asynchronous ideation, using smart integrations and intuitive UI."
-                    impact="Enabled teams to prototype, brainstorm, and launch ideas more efficiently, resulting in faster innovation cycles and stronger engagement."
+                    problem="Establishing trust and accountability between strangers exchanging money — without the authority or infrastructure of a traditional financial institution."
+                    solution="We introduced a structured flow that guided users step by step — building clarity, trust, and accountability throughout the exchange."
+                    impact="The new flow led to a 45% reduction in support tickets and user questions, signaling increased trust and clarity in the user experience."
                 />
             </div>
 
@@ -157,7 +157,7 @@ function FTCaseStudy() {
                     body="With these important discoveries, I set out to ideate version one of a possible solution focusing on the following aspects."
                 />
 
-                <div style={{ display: 'flex', flexDirection: 'row', width: '85%', margin: '2rem auto 2rem auto', alignItems: 'center', justifyContent: 'center' }} >
+                <div style={{ display: 'flex', flexDirection: 'row', width: '85%', gap: "1.5rem", margin: '2rem auto 2rem auto', alignItems: 'center', justifyContent: 'center' }} >
 
                     <TextHeading
                         headline=""
@@ -308,8 +308,8 @@ function FTCaseStudy() {
 
             <div style={{ marginBottom: "3rem" }}>
                 <TextHeading
-                    headline="Round 1"
-                    title="Usability Testing Round 1"
+                    headline="Usability Testing Round 1"
+                    title="Starting an Exchange Was an Issue"
                     body="With the higher fidelity prototype ready, I set out for testing again. I was looking to get answers to specific prototype questions."
                 />
 
@@ -327,7 +327,7 @@ function FTCaseStudy() {
             <div style={{ marginBottom: "3rem" }}>
                 <TextHeading
                     headline="Adjusting Again"
-                    title="Starting an Exchange Was a Clear Issue"
+                    title="Improving Exchange Initiation by Taking Advantadge of Empty State"
                     body="Understanding how the exchange works, and how to initiate an exchange were clear issues. To address these challenges, I developed the following solutions:"
                 />
                 <TextList
@@ -337,12 +337,21 @@ function FTCaseStudy() {
                         "Reveal exchange steps at the top of the chat - only when match has responded to initial message."
                     ]}
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_MainImage.png"
-                    alt="Sketches showing early Future Tech concepts"
-                />
+                <div style={{ display: "flex", flexDirection: "row", width: "75%", gap: "50px", margin: "0 auto", alignContent: "center" }}>
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_Adjusting2.png"
+                        alt="Sketches showing early Future Tech concepts"
+                    />
+
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_Adjusting2_2.png"
+                        alt="Sketches showing early Future Tech concepts"
+                    />
+                </div>
             </div>
             <div style={{ marginBottom: "3rem" }}>
                 <TextHeading
@@ -366,12 +375,21 @@ function FTCaseStudy() {
                         "Revealed the Start button, but did not activate it until the match responds."
                     ]}
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_MainImage.png"
-                    alt="Sketches showing early Future Tech concepts"
-                />
+                <div style={{ display: "flex", flexDirection: "row", width: "75%", gap: "50px", margin: "0 auto", alignContent: "center" }}>
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_Adjusting3.png"
+                        alt="Sketches showing early Future Tech concepts"
+                    />
+
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_Adjusting2_2.png"
+                        alt="Sketches showing early Future Tech concepts"
+                    />
+                </div>
             </div>
             <div style={{ marginBottom: "5rem" }}>
                 <TextHeading
@@ -386,7 +404,7 @@ function FTCaseStudy() {
                     title="Delighting Users with The Final Product"
                     body="The final product offers a clear and transparent process that is structured for trust and has involvement from FriendlyTransfer."
                 />
-            
+
                 <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
 
                     <LoopingVideo
@@ -403,7 +421,7 @@ function FTCaseStudy() {
             </div>
             <NextCaseStudyFooter
                 nextTitle="Next Case Study"
-                nextPath="/candyverse"
+                nextPath="/aac"
             />
 
         </main >

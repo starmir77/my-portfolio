@@ -26,13 +26,15 @@ export default function HeroTextOverlay() {
         ease: "power2.out",
         onComplete: () => {
           index = (index + 1) % roles.length;
-          setTimeout(loop, 1000); // delay before next word
+          setTimeout(loop, 1000);
         },
       });
     };
 
     document.fonts.ready.then(() => {
-      if (!isCancelled) loop();
+      if (!isCancelled) {
+        if (scrambleRef.current) loop();
+      }
     });
 
     return () => {
@@ -46,8 +48,12 @@ export default function HeroTextOverlay() {
         <h1>Rafaela Baquero</h1>
         <h2 ref={scrambleRef}>Designer</h2>
         <p>
-          I started in product management, built a startup in the AR space, and realized I was most fulfilled when designing and building hands-on. I’ve since shifted focus toward creative technology—blending design, code, and emerging tech to build products and experiences that push boundaries.
+          Hi!  I’m a product-minded designer who works across UX, strategy and code. I design with intent and build when needed, using AI and emerging tech to explore new directions and bring the right ideas to life. Outside of work, I enjoy cycling, Korean cinema, and existential philosophy.
         </p>
+        <div className="home-buttons">
+          <a href="/#work" className="hero-button">View Work</a>
+          <a href="mailto:rafaellabaquero@gmail.com?subject=Let's%20Connect" className="hero-button">Contact Me</a>
+        </div>
       </div>
     </div>
   );

@@ -1,17 +1,27 @@
-import { button } from "motion/react-client";
-
-function TextList({ text, items, buttonUrl, buttonLabel }) {
+function TextList({ text, items, buttonUrl, buttonLabel, ordered = false }) {
   return (
     <section className="text-list">
       <div className="text-list-wrapper">
         {text && <p className="text-list-text">{text}</p>}
-        <ul className="text-list-items">
-          {items.map((item, index) => (
-            <li key={index} className="text-list-item">
-              {item}
-            </li>
-          ))}
-        </ul>
+
+        {ordered ? (
+          <ol className="text-list-items">
+            {items.map((item, index) => (
+              <li key={index} className="text-list-item">
+                {item}
+              </li>
+            ))}
+          </ol>
+        ) : (
+          <ul className="text-list-items">
+            {items.map((item, index) => (
+              <li key={index} className="text-list-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+
         {buttonUrl && buttonLabel && (
           <a
             href={buttonUrl}
@@ -28,3 +38,4 @@ function TextList({ text, items, buttonUrl, buttonLabel }) {
 }
 
 export default TextList;
+

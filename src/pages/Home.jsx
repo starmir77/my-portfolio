@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import Work from "../components/Work";
 import Navbar from "../components/Navbar";
 import ContactMe from "../components/ContactMe";
-import { contactMe, intro, workProjects, workTitle } from "../data/homePage";
+import { contactMe, intro, workProjects, workProjectsCode, workTitle } from "../data/homePage";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import CanvasHero from "../components/CanvasHero";
@@ -10,26 +10,49 @@ import HeroTextOverlay from "../components/HeroTextOverlay.jsx";
 import Footer from "../components/Footer.jsx";
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollTarget = location.state?.scrollTo;
+    if (scrollTarget) {
+      const element = document.getElementById(scrollTarget);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
+
+
   return (
     <>
       <Navbar />
       <CanvasHero variant="global" />
       <div style={{ marginBottom: "8rem" }}>
         <HeroTextOverlay />
-        <div style={{ marginBottom: "0rem" }}>
+        <div style={{ marginBottom: "8rem" }}>
           <Work
-            title="Design Work"
-            description="A collection of work shaped to solve real problems through research and human-centered thinking."
+            id="work"
+            title={
+              <>
+                Design<br />
+                Work
+              </>
+            }
+            description="Research-led, design-driven work focused on solving product problems."
             work={workProjects}
-            variant = "default"
+            variant="default"
           />
         </div>
         <div style={{ marginBottom: "5rem" }}>
           <Work
-            title="Creative Code"
-            description="Explorations, prototypes, and experiments where I test ideas, play with interaction, and push the boundaries of code and creativity."
-            work={workProjects}
-            variant = "alt"
+            id="coding"
+            title="Code & Prototyping"
+            description="Projects I’ve designed, developed, and shipped using AI, APIs, and emerging technologies."
+            work={workProjectsCode}
+            variant="alt"
           />
         </div>
       </div>
