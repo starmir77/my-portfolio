@@ -48,7 +48,7 @@ export default function HeroTextOverlay() {
         <h1>Rafaela Baquero</h1>
         <h2 ref={scrambleRef}>Designer</h2>
         <p>
-          Hi!  I’m a product-minded designer who works across UX, strategy and code. I design with intent and build when needed, using AI and emerging tech to explore new directions and bring the right ideas to life. Outside of work, I enjoy cycling, Korean cinema, and existential philosophy.
+          Hi!  I’m a product-minded designer who works across UX, strategy and code. I move between defining solutions and building them, working with AI and new tech to explore what’s possible and make it real. Outside of work, I enjoy cycling, Korean cinema, and existential philosophy.
         </p>
         <div className="home-buttons">
           <a href="/#work" className="hero-button">View Work</a>
