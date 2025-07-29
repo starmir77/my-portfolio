@@ -126,10 +126,7 @@ function CandyverseCaseStudy() {
                         "The transition animation was custom-scripted to feel like a joyful lift-off, using camera movement and easing curves in Three.js for smooth motion."
                     ]}
                 />
-                <LoopingVideo
-                    src="/assets/Candyverse_Transitions.mp4"
-                />
-
+              
                 <TextHeading
                     headline=""
                     title="Technical Structure:"
