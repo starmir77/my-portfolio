@@ -408,7 +408,7 @@ function FTCaseStudy() {
                 <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
 
                     <LoopingVideo
-                        src="public/assets/FT_Movie.mp4"
+                        src="/assets/FT_Movie.mp4"
                         poster=""
                         autoPlay="true"
                         loop="true"
