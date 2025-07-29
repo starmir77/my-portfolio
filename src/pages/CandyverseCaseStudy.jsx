@@ -131,11 +131,11 @@ function CandyverseCaseStudy() {
                     src="/assets/Candyverse_Transitions.mp4"
                     poster=""
                     className="case-study-hero-video"
-                    autoPlay="true"
-                    loop="true"
-                    muted="true"
+                    autoPlay
+                    loop
+                    muted
                     playsInline
-                    controls=""
+                    controls={false}
                 />
 
                 <TextHeading
