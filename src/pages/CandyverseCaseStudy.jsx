@@ -20,7 +20,7 @@ function CandyverseCaseStudy() {
         <main>
             <Navbar></Navbar>
             <section className="hero-canvas-wrapper">
-                <CanvasHero />
+                <CanvasHero variant="global" />
                 <HeroCS
                     title="Candyverse: Designing Playful Worlds for Curious Minds"
                     subtitle="Using Three.js and JavaScript to explore the fundamentals of spatial layout, movement, and playful 3D environments."
