@@ -1634,6 +1634,8 @@ Contact Me Section
   object-fit: cover;
   display: block;
   z-index: 2;
+  background: black;
+  height: 100%;
 }
 
 @media (max-width: 600px) {
