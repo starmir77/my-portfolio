@@ -126,16 +126,9 @@ function CandyverseCaseStudy() {
                         "The transition animation was custom-scripted to feel like a joyful lift-off, using camera movement and easing curves in Three.js for smooth motion."
                     ]}
                 />
-
-                <div style={{ border: "2px solid red", background: "blue", width: "60%", margin: "3rem auto 0rem auto " }}>
-
-                    <LoopingVideo
-                        src="/assets/FT_Movie.mp4"
-                        autoPlay
-                        muted
-                        playsInline
-                    />
-                </div>
+                <LoopingVideo
+                    src="/assets/Candyverse_Transitions.mp4"
+                />
 
                 <TextHeading
                     headline=""

@@ -10,7 +10,7 @@ export default function LoopingVideo({ src, className, poster, muted = true, aut
             playsInline
             controls={!muted}
             className={className}
-            style={{ width: "100%", height: "auto", display: "block", zindex: "3" }}
+            style={{ width: "100%", height: "auto", display: "block", zIndex: "3" }}
             onLoadedData={() => console.log("✅ loaded")}
             onPlay={() => console.log("▶️ playing")}
             onError={(e) => console.error("❌ error", e)}
