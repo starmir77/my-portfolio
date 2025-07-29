@@ -1756,38 +1756,7 @@ Contact Me Section
   text-decoration: none;
   width: 95%;
   overflow: hidden;
-}
-
-.hero-button::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  padding: 2px;
-  border-radius: 6px;
-  background: linear-gradient(270deg, #775d6f, #eac1ff, #775d6f);
-  background-size: 400% 400%;
-  animation: whiteBorderGlow 7s linear infinite;
-
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
-@keyframes whiteBorderGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
+  border: 1.5px solid #775d6f;
 }
 
 .hero-button:hover {
