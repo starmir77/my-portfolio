@@ -127,20 +127,16 @@ function CandyverseCaseStudy() {
                     ]}
                 />
 
-                <LoopingVideo
-                    src="/assets/Candyverse_Transitions.mp4"
-                    autoPlay
-                    muted
-                    playsInline
-                    style={{
-                        width: "100%",
-                        height: "400px", // <— force height!
-                        objectFit: "cover",
-                        display: "block",
-                        background: "black",
-                        border: "2px solid red",
-                    }}
-                />
+                <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
+
+                    <LoopingVideo
+                        src="/assets/Candyverse_Transitions.mp4"
+                        poster=""
+                        autoPlay
+                        muted
+                        playsInline
+                    />
+                </div>
 
                 <TextHeading
                     headline=""
