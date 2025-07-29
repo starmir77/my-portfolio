@@ -130,12 +130,12 @@ function CandyverseCaseStudy() {
                 <LoopingVideo
                     src="/assets/Candyverse_Transitions.mp4"
                     poster=""
-                    className="case-study-hero-video"
-                    autoPlay
-                    loop
-                    muted
+                    autoPlay="true"
+                    loop="true"
+                    muted="true"
                     playsInline
-                    controls={false}
+                    controls=""
+                    className=""
                 />
 
                 <TextHeading
@@ -265,47 +265,47 @@ function CandyverseCaseStudy() {
 
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
 
-            <PageHeading
-                title="Reflections & Next Steps"
-            />
-            <TextHeading
-                headline=""
-                title=""
-                body="Candyverse started as a playful side project — a gift for my 6-year-old nephew and a way to deepen my skills in Three.js, JavaScript, and interactive design. But it quickly became a technical playground for learning how to structure scalable systems, optimize for performance, and integrate generative tools in creative development."
-            />
+                <PageHeading
+                    title="Reflections & Next Steps"
+                />
+                <TextHeading
+                    headline=""
+                    title=""
+                    body="Candyverse started as a playful side project — a gift for my 6-year-old nephew and a way to deepen my skills in Three.js, JavaScript, and interactive design. But it quickly became a technical playground for learning how to structure scalable systems, optimize for performance, and integrate generative tools in creative development."
+                />
 
-            <TextHeading
-                headline=""
-                title="What I Learned:"
-                body=""
-            />
-            <TextList
-                text=""
-                items={[
-                    "Simplicity is hard: Building a smooth, joyful experience with minimal interaction required constant iteration and restraint.",
-                    "Architecture matters early: Planning for extensibility upfront (like modular world definitions) made it easy to grow the game.",
-                    "Performance tuning is worth it: Small changes (like switching to .webp images or disposing of unused assets) made a big difference in mobile experience."
-                ]}
-            />
-            <TextHeading
-                headline=""
-                title="What I'd Add Next:"
-                body=""
-            />
-            <TextList
-                text=""
-                items={[
-                    "Save Progress: Persist high scores or unlocked worlds across sessions.",
-                    "Add More Worlds: With modular architecture in place, new worlds can be added with minimal effort.",
-                    "Explore the Universe: Turn the linear world progression into an explorable map or galaxy — giving players more freedom and replayability."
-                ]}
-            />
+                <TextHeading
+                    headline=""
+                    title="What I Learned:"
+                    body=""
+                />
+                <TextList
+                    text=""
+                    items={[
+                        "Simplicity is hard: Building a smooth, joyful experience with minimal interaction required constant iteration and restraint.",
+                        "Architecture matters early: Planning for extensibility upfront (like modular world definitions) made it easy to grow the game.",
+                        "Performance tuning is worth it: Small changes (like switching to .webp images or disposing of unused assets) made a big difference in mobile experience."
+                    ]}
+                />
+                <TextHeading
+                    headline=""
+                    title="What I'd Add Next:"
+                    body=""
+                />
+                <TextList
+                    text=""
+                    items={[
+                        "Save Progress: Persist high scores or unlocked worlds across sessions.",
+                        "Add More Worlds: With modular architecture in place, new worlds can be added with minimal effort.",
+                        "Explore the Universe: Turn the linear world progression into an explorable map or galaxy — giving players more freedom and replayability."
+                    ]}
+                />
 
-            <ImageHeading
-                headline="Gumdrop World"
-                title=""
-                image="/assets/Candyverse_NextSteps.png"
-            />
+                <ImageHeading
+                    headline="Gumdrop World"
+                    title=""
+                    image="/assets/Candyverse_NextSteps.png"
+                />
             </div>
             <NextCaseStudyFooter
                 nextTitle="Next Case Study >>"
