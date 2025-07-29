@@ -130,8 +130,7 @@ function CandyverseCaseStudy() {
                 <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
 
                     <LoopingVideo
-                        src="/assets/Candyverse_Transitions.mp4"
-                        poster=""
+                        src="/assets/FT_Movie.mp4"
                         autoPlay
                         muted
                         playsInline
