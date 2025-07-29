@@ -129,10 +129,17 @@ function CandyverseCaseStudy() {
 
                 <LoopingVideo
                     src="/assets/Candyverse_Transitions.mp4"
-                    poster=""
-                    autoPlay 
+                    autoPlay
                     muted
                     playsInline
+                    style={{
+                        width: "100%",
+                        height: "400px", // <— force height!
+                        objectFit: "cover",
+                        display: "block",
+                        background: "black",
+                        border: "2px solid red",
+                    }}
                 />
 
                 <TextHeading
