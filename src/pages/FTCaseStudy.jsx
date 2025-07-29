@@ -410,12 +410,9 @@ function FTCaseStudy() {
                     <LoopingVideo
                         src="/assets/FT_Movie.mp4"
                         poster=""
-                        autoPlay="true"
-                        loop="true"
-                        muted="true"
+                        autoPlay
+                        muted
                         playsInline
-                        controls=""
-                        className=""
                     />
                 </div>
             </div>

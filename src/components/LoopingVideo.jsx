@@ -1,5 +1,3 @@
-import React from 'react';
-
 export default function LoopingVideo({ src, className, poster, muted = true, autoPlay = true}) {
     return (
         <video

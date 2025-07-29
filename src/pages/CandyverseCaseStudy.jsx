@@ -130,12 +130,9 @@ function CandyverseCaseStudy() {
                 <LoopingVideo
                     src="/assets/Candyverse_Transitions.mp4"
                     poster=""
-                    autoPlay="true"
-                    loop="true"
-                    muted="true"
+                    autoPlay 
+                    muted
                     playsInline
-                    controls=""
-                    className=""
                 />
 
                 <TextHeading
