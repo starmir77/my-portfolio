@@ -127,7 +127,7 @@ function CandyverseCaseStudy() {
                     ]}
                 />
 
-                <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
+                <div style={{ border: "2px solid red", background: "blue", width: "60%", margin: "3rem auto 0rem auto " }}>
 
                     <LoopingVideo
                         src="/assets/FT_Movie.mp4"
