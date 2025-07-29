@@ -1,16 +1,19 @@
-export default function LoopingVideo({ src, className, poster, muted = true, autoPlay = true}) {
+export default function LoopingVideo({ src, className, poster, muted = true, autoPlay = true }) {
     return (
         <video
 
             src={src}
             poster={poster}
-            autoPlay ={autoPlay}
+            autoPlay={autoPlay}
             loop
             muted={muted}
             playsInline
-            controls = {!muted}
+            controls={!muted}
             className={className}
-            style={{ width: "100%", height: "auto", display: "block", zindex:"3"}}
+            style={{ width: "100%", height: "auto", display: "block", zindex: "3" }}
+            onLoadedData={() => console.log("✅ loaded")}
+            onPlay={() => console.log("▶️ playing")}
+            onError={(e) => console.error("❌ error", e)}
         />
     );
 }
