@@ -1633,6 +1633,7 @@ Contact Me Section
   border-radius: 1rem;
   object-fit: cover;
   display: block;
+  z-index: 2;
 }
 
 @media (max-width: 600px) {
