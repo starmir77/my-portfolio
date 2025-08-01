@@ -302,7 +302,7 @@ function FTCaseStudy() {
             <ImageHeading
                 headline=""
                 title=""
-                image="public/assets/FT_Prototype1.png"
+                image="/assets/FT_Prototype1.png"
                 alt="Sketches showing early Future Tech concepts"
             />
 
