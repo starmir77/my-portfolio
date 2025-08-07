@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 
-export default function CanvasHero({variant = "global"}) {
+export default function CanvasHero({ variant = "global" }) {
     const isGlobal = variant === "global";
     const canvasRef = useRef(null);
 
@@ -21,6 +21,7 @@ export default function CanvasHero({variant = "global"}) {
         // Gradient color stops (interpolated)
         let colors = [
             { r: 247, g: 192, b: 199 }, // pink
+            /*{ r: 255, g: 108, b: 167 }, // fucsia */
             { r: 221, g: 166, b: 232 }, // lavender
             { r: 253, g: 198, b: 137 }, // orange
             { r: 234, g: 193, b: 255 }, // mauve
@@ -51,22 +52,9 @@ export default function CanvasHero({variant = "global"}) {
             ctx.fillStyle = gradient;
             ctx.fillRect(0, 0, width, height);
         };
-
-        const drawDots = () => {
-            ctx.fillStyle = 'rgba(255,255,255,0.3)';
-            dots.forEach((dot) => {
-                ctx.beginPath();
-                ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
-                ctx.fill();
-
-                dot.y -= dot.speed;
-                if (dot.y < 0) dot.y = height;
-            });
-        };
-
         const animate = () => {
             drawGradientBackground();
-            drawDots();
+
 
             t += transitionSpeed;
             if (t >= 1) {

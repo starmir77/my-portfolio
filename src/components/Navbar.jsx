@@ -11,6 +11,7 @@ function Navbar() {
         <button className="nav-toggle" onClick={toggleMenu}>
           ☰
         </button>
+        <div className="logo-nav">👋🏼 Rafaela Baquero · Product Designer · Design Engineer</div>
         <div className={`nav-links ${isOpen ? 'open' : ''}`}>
           <Link to="/" className="nav-link" onClick={() => setIsOpen(false)}>Home</Link>
 
@@ -19,20 +20,10 @@ function Navbar() {
             state={{ scrollTo: 'work' }}
             className="nav-link"
             onClick={() => setIsOpen(false)}
-          >
+          > 
             Work
-          </Link>
-
-          <Link
-            to={{ pathname: '/' }}
-            state={{ scrollTo: 'coding' }}
-            className="nav-link"
-            onClick={() => setIsOpen(false)}
-          >
-            Coding
-          </Link>
-
-          <a
+          </Link> 
+         <a
             href="mailto:rafaellabaquero@gmail.com?subject=Let's%20Connect"
             className="nav-link"
             onClick={() => setIsOpen(false)}

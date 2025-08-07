@@ -31,32 +31,12 @@ function Home() {
       <Navbar />
       <CanvasHero variant="global" />
       <div style={{ marginBottom: "8rem" }}>
-        <HeroTextOverlay />
-        <div style={{ marginBottom: "8rem" }}>
-          <Work
-            id="work"
-            title={
-              <>
-                Design<br />
-                Work
-              </>
-            }
-            description="Research-led, design-driven work focused on solving product problems."
-            work={workProjects}
-            variant="default"
-          />
-        </div>
-        <div style={{ marginBottom: "5rem" }}>
-          <Work
-            id="coding"
-            title="Code & Prototyping"
-            description="Projects I’ve designed, developed, and shipped using AI, APIs, and emerging technologies."
-            work={workProjectsCode}
-            variant="alt"
-          />
-        </div>
+        <Work
+          id="work"
+          work={workProjects}
+          variant="default"
+        />
       </div>
-      <Footer />
     </>
   );
 }

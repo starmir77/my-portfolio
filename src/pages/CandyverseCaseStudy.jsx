@@ -296,11 +296,6 @@ function CandyverseCaseStudy() {
                     image="/assets/Candyverse_NextSteps.png"
                 />
             </div>
-            <NextCaseStudyFooter
-                nextTitle="Next Case Study >>"
-                nextPath="/aac"
-            />
-
         </main>
 
     )

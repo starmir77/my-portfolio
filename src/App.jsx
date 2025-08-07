@@ -22,6 +22,7 @@ function App() {
         <Route path="/friendlytransfer" element={<FTCaseStudy />} />
         <Route path="/advertisers" element={<AdRulesCaseStudy />} />
       </Routes>
+      <Footer />
     </>
   );
 }

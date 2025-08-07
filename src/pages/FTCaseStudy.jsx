@@ -28,7 +28,7 @@ function FTCaseStudy() {
                 <CanvasHero variant="scoped" />
                 <HeroCS
                     title="Designing Trust into a Peer-to-Peer Money Transferring Platform"
-                    subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers — all without the backing of a financial institution. I designed a structured, step-by-step experience that built trust between strangers and reduced support inquiries by 45%."
+                    subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers, all without the backing of a financial institution. I designed a structured, step-by-step experience that built trust between strangers and reduced support inquiries by 45%."
                     role="Reseach · Design · Usability Testing"
                     date=""
                     image="/assets/FT_MainCS.png"
@@ -416,11 +416,6 @@ function FTCaseStudy() {
                     />
                 </div>
             </div>
-            <NextCaseStudyFooter
-                nextTitle="Next Case Study"
-                nextPath="/aac"
-            />
-
         </main >
     );
 }

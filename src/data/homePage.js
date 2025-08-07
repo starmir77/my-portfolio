@@ -21,7 +21,7 @@ export const workTitle = "Selected Work";
 
 export const workProjects = [
     {
-        id: "candyverse",
+        id: "friendlytransfer",
         title: "Designing Trust Into Peer-to-Peer Money Exchange",
         subtitle: "UX Research · UX Design · Product Design",
         description: "Designed a trust-first exchange flow for a peer-to-peer money platform, reducing user confusion and cutting support tickets by 45%.",
@@ -31,7 +31,7 @@ export const workProjects = [
 
     {
         id: "aac",
-        title: "Designing Sarcasm: Reclaiming Voice, Humour & Identity",
+        title: "Reclaiming Voice, Humour & Identity",
         subtitle: "UX Research · Interaction Design",
         description: "Built an expressive text-to-speech interface for people with speech impairments, enabling nuanced communication through pitch, pacing, and emotion.",
         imagesrc: "/assets/ProjectCard_AAC1.png",
@@ -39,12 +39,21 @@ export const workProjects = [
     },
 
     {
-        id: "stila",
-        title: "Redesigned for Speed: From Test to ROAS, in Half the Time",
+        id: "adrules",
+        title: "From Test to ROAS, in Half the Time",
         subtitle: "Research · UX Design",
         description: "Redesigned a fragmented ad creation workflow into an integrated experience, cutting launch time in half and increasing creative testing by 50%.",
         imagesrc: "/assets/ProjectCard_AdRules.png",
         caseStudyPath: "/advertisers"
+    },
+
+    {
+        id: "stila",
+        title: "Visualizing Furnished Homes in Empty Spaces",
+        subtitle: "Unity, ARKit, Vuforia, Spatial UX",
+        description: "An iOS AR app that helps homebuyers visualize unfurnished properties—built with Unity, C#, and Cloud Content Delivery.",
+        imagesrc: "/assets/ProjectCard_StilaXR.png",
+        caseStudyPath: "/stilaxr"
     }
 
 ]
@@ -59,14 +68,7 @@ export const workProjectsCode = [
         caseStudyPath: "/candyverse",
     },
 
-    {
-        id: "stila",
-        title: "Stila XR: Visualizing Empty Homes with AR",
-        subtitle: "Unity, ARKit, Vuforia, Spatial UX",
-        description: "An iOS AR app that helps homebuyers visualize unfurnished properties—built with Unity, C#, and Cloud Content Delivery.",
-        imagesrc: "/assets/ProjectCard_StilaXR.png",
-        caseStudyPath: "/stilaxr"
-    }
+
 
 ]
 

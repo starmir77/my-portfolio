@@ -131,26 +131,40 @@ function AACCaseStudy() {
                     body="From both user research and the science behind sarcasm, it was clear that the following needs exist:"
                 />
 
+                <div style={{ display: "flex", flexDirection: "row", width: "85%", margin: "0rem auto 0rem auto" }}>
 
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "Control Pitch",
-                            author: ""
-                        },
-                        {
-                            text: "Control Speed",
-                            author: ""
-                        },
-                        {
-                            text: "Control Pausing",
-                            author: ""
-                        }
-                    ]}
-                />
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "Control Pitch",
+                                author: ""
+                            }
+
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
+
+                            {
+                                text: "Control Speed",
+                                author: ""
+                            }
+
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
+
+                            {
+                                text: "Control Pausing",
+                                author: ""
+                            }
+                        ]}
+                    />
+                </div>
             </div>
 
-            < div style={{ marginBottom: "2rem" }}>
+            < div style={{ marginBottom: "3rem" }}>
 
                 <TextHeading
                     headline="Develop & Test"
@@ -178,14 +192,14 @@ function AACCaseStudy() {
                 <ImageHeading
                     headline=""
                     title=""
-                    image="/assets/2025Portfolio_AAC_Image1.png"
+                    image="/assets/AAC_0.png"
                     alt="Screenshot of AAC interface with popup voice styling menu"
                 />
             </div>
 
             <TextHeading
                 headline="Develop & Test"
-                title="Adding Interactions"
+                title="Prototyping Effect Interactions"
                 body="I then prototyped the interactions a user would take to:"
             />
 
@@ -197,37 +211,118 @@ function AACCaseStudy() {
                     "Add a pause",
                     "Slow down delivery"
                 ]}
-
             />
-
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/Frame 13.png"
-                alt="Screenshot of AAC interface with popup voice styling menu"
+            <div className="image-grid">
+                <div className="text-image">
+                    <h3>Drag a word to raise or lower pitch</h3>
+                    <img
+                        src="/assets/AAC_1.png"
+                        alt="A descriptive alt text"
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+                <div className="text-image">
+                    <h3>Add pause by dragging button between words</h3>
+                    <img
+                        src="/assets/AAC_4.png"
+                        alt=""
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+                <div className="text-image">
+                    <h3>Slow down or speed up delivery</h3>
+                    <img
+                        src="/assets/AAC_2.png"
+                        alt=""
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+                <div className="text-image">
+                    <h3>Extend a word by dragging and dropping the button</h3>
+                    <img
+                        src="/assets/AAC_5.png"
+                        alt=""
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+                <div className="text-image">
+                    <h3>Add a pause by draggind the pause button</h3>
+                    <img
+                        src="/assets/AAC_3.png"
+                        alt=""
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+                <div className="text-image">
+                    <h3>Visual cues for all effects</h3>
+                    <img
+                        src="/assets/AAC_6.png"
+                        alt=""
+                        style={{
+                            width: "100%",
+                            maxWidth: "600px",
+                            display: "block",
+                            borderRadius: "8px",
+                        }}
+                    />
+                </div>
+            </div>
+            <TextHeading
+                headline="Develop & Test"
+                title="Receiving Feedback"
+                body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
             />
-
-            < div style={{ marginBottom: "2rem" }}>
-
-                <TextHeading
-                    headline="Develop & Test"
-                    title="Receiving Feedback"
-                    body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
-                />
+            < div style={{ display: "flex", flexDirection: "row", marginBottom: "2rem", width: "85%", margin: "0 auto 2rem auto" }}>
 
                 <QuoteGroup
                     quotes={[
                         {
-                            text: "Reduce dragging and spacing effort from user.",
+                            text: "Reduce dragging effort from user.",
                             author: ""
-                        },
+                        }
+                    ]}
+                />
+                <QuoteGroup
+                    quotes={[
+                        {
+                            text: "Reduce spacing effort from user.",
+                            author: ""
+                        }
+                    ]}
+                />
+                <QuoteGroup
+                    quotes={[
                         {
                             text: "Simplify interactions for faster use",
                             author: ""
                         }
 
                     ]}
-
                 />
             </div>
 
@@ -238,7 +333,6 @@ function AACCaseStudy() {
                     title="Final Design"
                     body="Based on feedback, I simplified the interface:"
                 />
-
                 <TextList
                     text=""
                     items={[
@@ -248,17 +342,11 @@ function AACCaseStudy() {
                     ]}
                 />
 
+
                 <ImageHeading
                     headline="New Design"
                     title=""
-                    image="/assets/2025Portfolio_AAC_After.png"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
-
-                <ImageHeading
-                    headline="Previous Design"
-                    title=""
-                    image="/assets/2025Portfolio_AAC_Before.png"
+                    image="/assets/AAC_FinalDesign.png"
                     alt="Screenshot of AAC interface with popup voice styling menu"
                 />
             </div>
@@ -300,19 +388,6 @@ function AACCaseStudy() {
                     ]}
                 />
             </div>
-
-            < div style={{ marginBottom: "3rem" }}>
-
-                <TextCTA
-                    title="Try the Prototype Yourself"
-                    text="Type a sentence, add effects to words or emotions to the whole sentence, then hit Play to hear it come to life."
-                    listItems={[
-                    ]}
-                    buttonUrl="https://aac-prototype.vercel.app/"
-                    buttonLabel="Navigate to Prototype"
-                />
-            </div>
-
             < div style={{ marginBottom: "5rem" }}>
 
                 <PageHeading
@@ -330,12 +405,7 @@ function AACCaseStudy() {
                     ]}
                 />
             </div>
-            <NextCaseStudyFooter
-                nextTitle="Next Case Study"
-                nextPath="/advertisers"
-            />
-
-        </main>
+        </main >
     );
 }
 

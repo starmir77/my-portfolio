@@ -224,11 +224,6 @@ function FTCaseStudy() {
                     ]}
                 />
             </div>
-            <NextCaseStudyFooter
-                nextTitle="Next Case Study"
-                nextPath="/friendlytransfer"
-            />
-
         </main >
     );
 }
