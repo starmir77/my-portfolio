@@ -6,7 +6,8 @@
 
   /* === Colors === */
   --color-text-secondary: #3e3e3e;
-  --color-text-tertiary: #a6829b;
+  --color-text-tertiary: #656565;
+  /* #a6829b;*/
   --color-secondary: #1a1a1a;
   --color-tertiary: #DDA6E8;
   --color-light-tertiary: #eed3f4;
@@ -74,7 +75,7 @@ html {
   left: 0;
   width: 100%;
   background: var(--gradient-accent);
-   z-index: 3;
+  z-index: 3;
   padding: 1rem 0rem 1rem 0rem;
 }
 
@@ -170,7 +171,7 @@ html {
 @media (min-width: 1440px) {
 
   .navbar-container {
-    width: 80%;
+    width: 85%;
   }
 
 }
@@ -222,24 +223,25 @@ html {
 }
 
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-.footer2-container {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0rem 0rem;
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 0.25rem;
-}
-.footer2-link {
+  .footer2-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.25rem;
+  }
 
-  font-size: 1rem;
-}
+  .footer2-link {
 
-.footer2-left{
- font-size: 0.85rem; 
-}
+    font-size: 1rem;
+  }
+
+  .footer2-left {
+    font-size: 0.85rem;
+  }
 
 }
 
@@ -281,7 +283,7 @@ html {
 }
 
 .hero-cs-image-container {
-  flex-basis: 60%;
+  flex-basis: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -301,7 +303,7 @@ html {
 }
 
 .hero-cs-text {
-  flex-basis: 40%;
+  flex-basis: 30%;
   padding: 3rem 0rem;
   padding-left: 0rem;
 }
@@ -324,7 +326,7 @@ html {
 
 .hero-cs-meta {
   font-family: var(--font-secondary);
-  font-size: var(--text-small);
+  font-size: 1.5rem;
   color: var(--color-text-tertiary);
   font-weight: 600;
 }
@@ -362,7 +364,7 @@ html {
 
 @media (max-width: 767px) {
   .hero-cs {
-    padding-top: 2rem;
+    padding-top: 4rem;
     height: auto;
     width: 100%;
   }
@@ -372,8 +374,8 @@ html {
     flex-direction: column-reverse;
     gap: 0;
     align-items: center;
-    width: 85%;
-    padding: 3rem 2rem;
+    width: 95%;
+    padding: 4rem 0rem;
   }
 
   .hero-cs-image-container {
@@ -401,14 +403,21 @@ html {
   .hero-cs-subtitle {
     font-size: 0.9rem;
     margin-bottom: 1rem;
-    line-height: 1.30rem;
+    line-height: 1.5rem;
   }
 
   .hero-cs-text {
     padding: 0rem 1.5rem;
-    width: 100%;
     text-align: left;
   }
+
+  .hero-cs-meta {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-text-tertiary);
+    font-weight: 900;
+  }
+
 
   .hero-cs-link {
     font-size: 0.8rem;
@@ -630,6 +639,7 @@ html {
   color: var(--color-text-secondary);
   font-family: var(--font-primary);
   margin-bottom: 0;
+  line-height: 1.2;
 }
 
 .text-heading-body {
@@ -647,7 +657,7 @@ html {
 .image-heading {
   position: relative;
   z-index: 2;
-  max-width: 60%;
+  max-width: 100%;
   margin: 2rem auto 2rem auto;
   text-align: left;
 }
@@ -675,7 +685,7 @@ html {
 
 .image-heading-img {
   width: 100%;
-  border-radius: 6px;
+  border-radius: 4px;
   object-fit: cover;
 }
 
@@ -798,29 +808,30 @@ html {
    ====================================================== */
 
 .quote-group {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-content: center;
+  display: flow-root;
   width: 100%;
-  gap: 0;
-  margin: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.quote-group-wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .quote-group .quote-block {
-  flex: 1 1 20%;
-  background-color: var(--color-light-tertiary);
-  border-left: 4px solid var(--color-text-secondary);
-  border-radius: 6px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 100%;
+  background-color: #DEA6E7;
+  border-radius: 15px;
   padding: 1.5rem;
+  margin: 0;
 }
 
 .quote-group .quote-text {
+  font-family: var(--font-secondary);
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   color: var(--color-text-secondary);
   line-height: 1.6;
 }
@@ -829,6 +840,14 @@ html {
   font-size: 0.95rem;
   color: var(--color-text-muted);
   text-align: right;
+  font-family: var(--font-secondary);
+  padding-top: 1rem;
+}
+
+.quote-group .quote-block blockquote,
+.quote-group .quote-block footer,
+.quote-group .quote-block p {
+  margin: 0;
 }
 
 
@@ -867,6 +886,16 @@ html {
   font-family: var(--font-secondary);
   line-height: 1.8;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .intro-heading-inner {
+    width: 85%;
+  }
+
+  .intro-heading-body {
+    width: 85%;
+  }
 }
 
 
@@ -1056,13 +1085,13 @@ html {
 
 @media (max-width: 480px) {
   .card-image-wrapper {
-    height: 550px;
+    height: 225px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
   .card-image-wrapper {
-    height: 150px;
+    height: 200px;
   }
 
   .friendlytransfer.default {
@@ -1183,7 +1212,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 3px solid orange;
   }
 
   .grid-hero.default {
@@ -1384,7 +1412,7 @@ Contact Me Section
 .hero-text-overlay h2 {
   font-family: var(--font-secondary);
   font-size: 1.15rem;
-  font-weight: 500;
+  font-weight: 800;
   color: var(--color-text-secondary);
 
 }
@@ -1393,13 +1421,13 @@ Contact Me Section
   font-family: var(--font-secondary);
   color: var(--color-text-secondary);
   font-size: 1.15rem;
-  line-height: 1.7rem;
+  line-height: 1.75rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
 
   .hero-text-overlay h1 {
-    margin-bottom: -5px;
+    margin-bottom: -10px;
   }
 }
 
@@ -1564,11 +1592,10 @@ Simple Table
 
 .simple-table {
   border-collapse: collapse;
-  width: 100%;
+  width: 85%;
   max-width: 700px;
   margin: 2rem auto;
   font-size: 14px;
-  border: 1px solid var(--color-text-secondary);
   border-radius: 8px;
 }
 
@@ -1576,17 +1603,16 @@ Simple Table
 .simple-table td {
   padding: 12px;
   text-align: center;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid gray;
 }
 
 .simple-table th {
   padding: 12px;
   text-align: left;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid gray;
 }
 
 .table-label {
-  background-color: var(--color-text-light);
   font-weight: 600;
   text-align: left;
   font-family: var(--font-secondary);
@@ -1629,6 +1655,7 @@ Simple Table
   /* Optional, for cool effect */
 }
 
+/* LAYOUTS*/
 /* IMAGE GRID USED FOR AAC CASE STUDY */
 .image-grid {
   display: grid;
@@ -1636,7 +1663,7 @@ Simple Table
   grid-template-rows: repeat(3, 1fr);
   width: 85%;
   gap: 20px 50px;
-  margin: 1rem auto 3rem auto;
+  margin: 1rem auto 2rem auto;
 }
 
 .text-image {
@@ -1647,9 +1674,13 @@ Simple Table
 }
 
 .text-image h3 {
-font-family: var(--font-secondary);
-font-size: 1rem;
-color: var(--color-text-secondary);
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-tertiary);
+  margin-bottom: 0.25rem;
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -1659,4 +1690,79 @@ color: var(--color-text-secondary);
   }
 }
 
+/* LAYOUT USED FOR FT CASE STUDY */
+/* container */
+.compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  width: 85%;
+  margin: 2rem auto;
+}
 
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem 1rem;
+  width: 70%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* Mobile: stack into 1 column */
+@media (max-width: 700px) {
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+    width: 85%;
+    /* slightly smaller gap on mobile */
+  }
+}
+
+.two-col-eq {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .two-col-eq {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    width: 85%;
+    /* slightly smaller gap on mobile */
+  }
+}
+
+
+.image-div {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  .image-div {
+    width: 85%;
+  }
+}
+
+.quote-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 65%;
+  margin: 1.5rem auto 1.5rem auto;
+}
+
+@media (max-width: 667px) {
+  .quote-row {
+    flex-direction: column;
+    width: 85%;
+
+  }
+}

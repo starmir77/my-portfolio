@@ -5,13 +5,10 @@ import TextList from '../components/TextList';
 import PageHeading from '../components/PageHeading';
 import QuoteGroup from '../components/QuoteGroup';
 import IntroHeading from '../components/IntroHeading';
-import EmbedFrame from '../components/EmbedFrame';
-import LoopingVideo from '../components/LoopingVideo';
 import Navbar from '../components/Navbar';
-import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
-import TextCTA from '../components/TextCTA';
+
 
 
 function AACCaseStudy() {
@@ -46,19 +43,21 @@ function AACCaseStudy() {
                 />
             </div>
 
-            <div style={{ margin: "5rem 0rem 3rem 0rem" }}>
+            <div style={{ margin: "5rem 0rem 5rem 0rem" }}>
                 <PageHeading
                     title="Designing Humor into Assistive Speech Technology"
                     body="Most AAC (Augmentative and Alternative Communication) devices help people with speech impairments communicate clearly — but that clarity often comes at the cost of personality. For people with Motor Neuron Disease (MND), who increasingly rely on these tools as speech becomes difficult, this can be especially frustrating. In interviews and literature, a consistent theme emerged: users couldn’t express humor or sarcasm. Timing, pitch, and personality were flattened — and for many, that felt like losing a part of themselves. This project explores how we might restore some of that expressive power. I designed and prototyped an interface that lets AAC users shape how their message is delivered using pitch, speed, emphasis, pauses, and elongation — key elements of sarcastic and humorous tone."
                 />
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "I used to be the one making jokes — the life of the party. I won’t be able to keep that up as this progresses.",
-                            author: "Interview Participant"
-                        }
-                    ]}
-                />
+                <div className='quote-row'>
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "I used to be the one making jokes — the life of the party. I won’t be able to keep that up as this progresses.",
+                                author: "Interview Participant"
+                            }
+                        ]}
+                    />
+                </div>
             </div>
 
             < div style={{ marginBottom: "2rem" }}>
@@ -86,26 +85,36 @@ function AACCaseStudy() {
                     ]}
 
                 />
+                <div className="quote-row">
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "I want to be able to control spacing and speed and tone, like pitch — if you could have a dial to control the speed as it's playing or just pause it so someone can talk back and you can have a more natural conversation.",
+                                author: ""
+                            }
 
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "I want to be able to control spacing and speed and tone, like pitch — if you could have a dial to control the speed as it's playing or just pause it so someone can talk back and you can have a more natural conversation.",
-                            author: ""
-                        },
-                        {
-                            text: "Each day presents countless frustrations as humor and incisive comments require timing and inflection",
-                            author: ""
-                        },
-                        {
-                            text: "No sense of humor — it [humor] just doesn’t come across in the same way — it doesn’t pause where you would pause, that’s a really big one.",
-                            author: ""
-                        }
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
 
-                    ]}
+                            {
+                                text: "Each day presents countless frustrations as humor and incisive comments require timing and inflection",
+                                author: ""
+                            }
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
 
-                />
+                            {
+                                text: "No sense of humor — it [humor] just doesn’t come across in the same way — it doesn’t pause where you would pause, that’s a really big one.",
+                                author: ""
+                            }
 
+                        ]}
+                    />
+                </div>
                 <TextHeading
                     headline=""
                     title=""
@@ -131,8 +140,7 @@ function AACCaseStudy() {
                     body="From both user research and the science behind sarcasm, it was clear that the following needs exist:"
                 />
 
-                <div style={{ display: "flex", flexDirection: "row", width: "85%", margin: "0rem auto 0rem auto" }}>
-
+                <div className="quote-row">
                     <QuoteGroup
                         quotes={[
                             {
@@ -181,20 +189,22 @@ function AACCaseStudy() {
                     ]}
 
                 />
-
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/2015Portfolio_AAC_paperProt.jpg"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
-
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/AAC_0.png"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/2015Portfolio_AAC_paperProt.jpg"
+                        alt="Screenshot of AAC interface with popup voice styling menu"
+                    />
+                </div>
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/AAC_0.png"
+                        alt="Screenshot of AAC interface with popup voice styling menu"
+                    />
+                </div>
             </div>
 
             <TextHeading
@@ -292,38 +302,41 @@ function AACCaseStudy() {
                     />
                 </div>
             </div>
-            <TextHeading
-                headline="Develop & Test"
-                title="Receiving Feedback"
-                body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
-            />
-            < div style={{ display: "flex", flexDirection: "row", marginBottom: "2rem", width: "85%", margin: "0 auto 2rem auto" }}>
 
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "Reduce dragging effort from user.",
-                            author: ""
-                        }
-                    ]}
+            <div style={{ marginBottom: "2rem" }}>
+                <TextHeading
+                    headline="Develop & Test"
+                    title="Receiving Feedback"
+                    body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
                 />
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "Reduce spacing effort from user.",
-                            author: ""
-                        }
-                    ]}
-                />
-                <QuoteGroup
-                    quotes={[
-                        {
-                            text: "Simplify interactions for faster use",
-                            author: ""
-                        }
+                < div className="quote-row">
 
-                    ]}
-                />
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "Reduce dragging effort from user.",
+                                author: ""
+                            }
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "Reduce spacing effort from user.",
+                                author: ""
+                            }
+                        ]}
+                    />
+                    <QuoteGroup
+                        quotes={[
+                            {
+                                text: "Simplify interactions for faster use.",
+                                author: ""
+                            }
+
+                        ]}
+                    />
+                </div>
             </div>
 
             < div style={{ marginBottom: "2rem" }}>
@@ -342,15 +355,16 @@ function AACCaseStudy() {
                     ]}
                 />
 
-
-                <ImageHeading
-                    headline="New Design"
-                    title=""
-                    image="/assets/AAC_FinalDesign.png"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline="New Design"
+                        title=""
+                        image="/assets/AAC_FinalDesign.png"
+                        alt="Screenshot of AAC interface with popup voice styling menu"
+                    />
+                </div>
             </div>
-            < div style={{ marginBottom: "3rem" }}>
+            < div style={{ marginBottom: "5rem" }}>
 
                 <TextHeading
                     headline="Deliver"

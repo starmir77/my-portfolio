@@ -5,8 +5,6 @@ import TextHeading from '../components/TextHeading';
 import PageHeading from '../components/PageHeading';
 import TextList from '../components/TextList';
 import ImageHeading from '../components/ImageHeading';
-import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
-import LoopingVideo from '../components/LoopingVideo';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
 

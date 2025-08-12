@@ -5,9 +5,6 @@ import TextHeading from '../components/TextHeading';
 import PageHeading from '../components/PageHeading';
 import TextList from '../components/TextList';
 import ImageHeading from '../components/ImageHeading';
-import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
-import KeyPoints from '../components/KeyPoints';
-import LoopingVideo from '../components/LoopingVideo';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
 
@@ -161,11 +158,6 @@ function CandyverseCaseStudy() {
                 title="Anchoring AR Is Hard — But Worth It"
                 body="Designing Stila meant diving deep into the nuances of spatial computing, especially the challenge of persistent AR that aligns virtual content with real-world environments. We explored several approaches to anchoring content, from custom mapping to platform-native solutions, and ultimately found Vuforia’s Area Targets to be the most accessible and reliable option for indoor use. AR is easy when content can be placed anywhere. It gets harder — and more interesting — when anchoring that content meaningfully within physical space. Indoors, where GPS is unreliable and lighting varies, those challenges become even more pronounced. This is still an emerging space with plenty of friction points to solve. But with the right tools and a grounded use case, we proved it’s possible to deliver a smooth, high-impact AR experience where it matters most."
             />
-            <NextCaseStudyFooter
-                nextTitle="Next Case Study >>"
-                nextPath="/candyverse"
-            />
-
         </main>
 
     )

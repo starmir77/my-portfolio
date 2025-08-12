@@ -6,7 +6,6 @@ import PageHeading from '../components/PageHeading';
 import QuoteGroup from '../components/QuoteGroup';
 import IntroHeading from '../components/IntroHeading';
 import Navbar from '../components/Navbar';
-import NextCaseStudyFooter from '../components/NextCaseStudyFooter';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
 import SimpleTable from '../components/SimpleTable';
@@ -51,12 +50,14 @@ function FTCaseStudy() {
                     title="Understanding Peer-to-Peer Money Exchanges"
                     body="FriendlyTransfer helps users connect with matching transferring needs based on $ amount, but opposite locations.For example, Tom lives in the U.S. and needs to send $100 to his friend in Ecuador. Meanwhile, Ana needs to send $100 to her mother in the U.S. FriendlyTransfer helps Tom connect with Ana. Tom makes a local transfer to Ana's mother in the U.S., and Ana makes a local transfer to Tom's friend in Ecuador. Both Tom's friend and Ana's mother receive $100 dollars. Tom and Ana save the international transfer costs and the money never moves borders."
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_explanation.png"
-                    alt=""
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_explanation.png"
+                        alt=""
+                    />
+                </div>
 
             </div>
 
@@ -73,13 +74,14 @@ function FTCaseStudy() {
                         "Analyzed existing surveys & interviews",
                     ]}
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_AffinityMapping.png"
-                    alt=""
-                />
-
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_AffinityMapping.png"
+                        alt=""
+                    />
+                </div>
             </div>
 
             <div style={{ marginBottom: "5rem" }}>
@@ -89,7 +91,7 @@ function FTCaseStudy() {
                     body="FriendlyTransfer’s current transaction process, which involves two users with matching needs agreeing to transfer money locally on behalf of the matching user, takes place inside the chat in the form of a conversation. Users found this process to be informal and unreliable."
                 />
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', width: '75%', margin: '0 auto 0rem auto', alignItems: 'center' }} >
+                <div className="two-col" style={{ margin: "2rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -109,7 +111,7 @@ function FTCaseStudy() {
                         }
                     />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', width: '75%', margin: '0 auto 0rem auto', alignItems: 'center' }} >
+                <div className="two-col" style={{ margin: "2rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -129,7 +131,7 @@ function FTCaseStudy() {
                         }
                     />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', width: '75%', margin: '0 auto 0rem auto', alignItems: 'center' }} >
+                <div className="two-col" style={{ margin: "2rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -157,8 +159,7 @@ function FTCaseStudy() {
                     body="With these important discoveries, I set out to ideate version one of a possible solution focusing on the following aspects."
                 />
 
-                <div style={{ display: 'flex', flexDirection: 'row', width: '85%', gap: "1.5rem", margin: '2rem auto 2rem auto', alignItems: 'center', justifyContent: 'center' }} >
-
+                <div className="compare">
                     <TextHeading
                         headline=""
                         title=""
@@ -197,35 +198,40 @@ function FTCaseStudy() {
                     title="1. Structured Transaction Process"
                     body="Through a Step by Step Wizard"
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_StructuredTransaction.png"
-                    alt=""
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_StructuredTransaction.png"
+                        alt=""
+                    />
+                </div>
                 <TextHeading
                     headline=""
                     title="2. Transparent Transaction Process"
                     body="Through a Step by Step Wizard & Progress Bar"
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_TransparentTransaction.png"
-                    alt=""
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_TransparentTransaction.png"
+                        alt=""
+                    />
+                </div>
                 <TextHeading
                     headline=""
                     title="3. Involvement from Friendly Transfer"
                     body="Through a dependency-based transaction"
                 />
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/FT_Involvement.png"
-                    alt=""
-                />
-
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/FT_Involvement.png"
+                        alt=""
+                    />
+                </div>
             </div>
 
             <div style={{ marginBottom: "2rem" }}>
@@ -234,7 +240,7 @@ function FTCaseStudy() {
                     body="With a basic wireframe prototype, I started guerrilla testing with one new user and remote testing with three existing users. While the prototype solved most problems, it surfaced a problem I hadn’t anticipated."
                 />
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', width: '75%', margin: '0 auto 0rem auto', alignItems: 'center' }} >
+                <div className="two-col" style={{ margin: "2rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -253,7 +259,7 @@ function FTCaseStudy() {
                         }
                     />
                 </div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', width: '75%', margin: '0 auto 0rem auto', alignItems: 'center' }} >
+                <div className="two-col" style={{ margin: "2rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -287,24 +293,27 @@ function FTCaseStudy() {
                     "Allow first- time users to initiate an exchange only when the match has responded."
                 ]}
             />
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/FT_Adjusting.png"
-                alt=""
-            />
+            <div className="image-div">
+                <ImageHeading
+                    headline=""
+                    title=""
+                    image="/assets/FT_Adjusting.png"
+                    alt=""
+                />
+            </div>
             <TextHeading
                 headline=""
                 title="Prototyping the Solution"
                 body="From the minimal wireframe, I created a prototype using FriendlyTransfer's existing color palette."
             />
-
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/FT_Prototype1.png"
-                alt="Sketches showing early Future Tech concepts"
-            />
+            <div className="image-div">
+                <ImageHeading
+                    headline=""
+                    title=""
+                    image="/assets/FT_Prototype1.png"
+                    alt="Sketches showing early Future Tech concepts"
+                />
+            </div>
 
             <div style={{ marginBottom: "3rem" }}>
                 <TextHeading
@@ -327,7 +336,7 @@ function FTCaseStudy() {
             <div style={{ marginBottom: "3rem" }}>
                 <TextHeading
                     headline="Adjusting Again"
-                    title="Improving Exchange Initiation by Taking Advantadge of Empty State"
+                    title="Taking Advantadge of Empty State"
                     body="Understanding how the exchange works, and how to initiate an exchange were clear issues. To address these challenges, I developed the following solutions:"
                 />
                 <TextList
@@ -337,7 +346,7 @@ function FTCaseStudy() {
                         "Reveal exchange steps at the top of the chat - only when match has responded to initial message."
                     ]}
                 />
-                <div style={{ display: "flex", flexDirection: "row", width: "75%", gap: "50px", margin: "0 auto", alignContent: "center" }}>
+                <div className="two-col-eq">
                     <ImageHeading
                         headline=""
                         title=""
@@ -375,7 +384,7 @@ function FTCaseStudy() {
                         "Revealed the Start button, but did not activate it until the match responds."
                     ]}
                 />
-                <div style={{ display: "flex", flexDirection: "row", width: "75%", gap: "50px", margin: "0 auto", alignContent: "center" }}>
+                <div className="two-col-eq">
                     <ImageHeading
                         headline=""
                         title=""
@@ -399,13 +408,13 @@ function FTCaseStudy() {
                 />
                 <SimpleTable rowLabels={FriendlyTransfer.rowLabels3} colLabels={FriendlyTransfer.colLabels3} data={FriendlyTransfer.data3} />
             </div>
-            <div style={{ marginBottom: "8rem" }}>
+            <div style={{ marginBottom: "5rem" }}>
                 <PageHeading
                     title="Delighting Users with The Final Product"
                     body="The final product offers a clear and transparent process that is structured for trust and has involvement from FriendlyTransfer."
                 />
 
-                <div style={{ width: "60%", margin: "3rem auto 0rem auto " }}>
+                <div className="image-div" style={{ marginTop: "2rem" }}>
 
                     <LoopingVideo
                         src="/assets/FT_Movie.mp4"
