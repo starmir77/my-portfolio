@@ -42,6 +42,21 @@
 
 }
 
+/* === Reusable Font Classes === */
+.font-nav {
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+}
+
+.hover-link-effect:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.2),
+    0 0 15px rgba(221, 166, 232, 0.1);
+  transform: translateY(-1px);
+  text-decoration: underline;
+}
+
 /* Reset default spacing */
 body,
 html {
@@ -100,6 +115,7 @@ html {
   text-decoration: underline;
 }
 
+
 .nav-link.active {
   background-image: var(--gradient-accent);
   background-clip: text;
@@ -154,7 +170,7 @@ html {
 @media (min-width: 1440px) {
 
   .navbar-container {
-    width: 85%;
+    width: 80%;
   }
 
 }
@@ -204,6 +220,7 @@ html {
   transform: translateY(-1px);
   text-decoration: underline;
 }
+
 
 @media (max-width: 768px){
 
@@ -319,7 +336,7 @@ html {
 }
 
 .hero-cs-link {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: var(--font-secondary);
   color: var(--color-text-secondary);
@@ -331,7 +348,6 @@ html {
   border: 1.5px solid var(--color-text-tertiary);
   border-radius: 0.25rem;
   cursor: pointer;
-  font-size: 1rem;
   transition: background-color 0.3s ease;
   text-align: center;
 }
@@ -344,7 +360,7 @@ html {
 }
 
 
-@media (max-width: 481px) {
+@media (max-width: 767px) {
   .hero-cs {
     padding-top: 2rem;
     height: auto;
@@ -377,28 +393,16 @@ html {
   }
 
   .hero-cs-title {
-    font-family: var(--font-primary);
     font-size: 2rem;
     margin-bottom: 0.5rem;
     line-height: 2.7rem;
-    color: var(--color-text-secondary);
   }
 
   .hero-cs-subtitle {
-    font-family: var(--font-secondary);
     font-size: 0.9rem;
-    color: var(--color-text-secondary);
     margin-bottom: 1rem;
     line-height: 1.30rem;
   }
-
-  .hero-cs-meta {
-    font-family: var(--font-secondary);
-    font-size: var(--text-small);
-    color: var(--color-text-tertiary);
-    font-weight: 600;
-  }
-
 
   .hero-cs-text {
     padding: 0rem 1.5rem;
@@ -409,72 +413,11 @@ html {
   .hero-cs-link {
     font-size: 0.8rem;
   }
-}
 
-@media (min-width: 481px) {
-  .hero-cs {
-    padding-top: 2rem;
-    height: auto;
-    width: 100%;
-  }
-
-  .hero-cs-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 0;
-    align-items: center;
-    width: 85%;
-    padding: 3rem 2rem;
-  }
-
-  .hero-cs-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: 100%;
-  }
-
-  .hero-cs-image {
-    max-width: 95%;
-    max-height: none;
-    height: auto;
-    margin: 0rem auto 0rem auto;
-    display: block;
-  }
-
-  .hero-cs-title {
-    font-family: var(--font-primary);
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    line-height: 2.8rem;
-    color: var(--color-text-secondary);
-  }
-
-  .hero-cs-subtitle {
-    font-family: var(--font-secondary);
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
-    line-height: 1.30rem;
-  }
-
-  .hero-cs-meta {
-    font-family: var(--font-secondary);
-    font-size: var(--text-small);
-    color: var(--color-text-tertiary);
-    font-weight: 600;
-  }
-
-
-  .hero-cs-text {
-    padding: 0rem 1.5rem;
-    width: 100%;
-    text-align: left;
-  }
-
-  .hero-cs-link {
-    font-size: 0.8rem;
+  @media (min-width: 481px) {
+    .hero-cs-title {
+      line-height: 2.8rem;
+    }
   }
 }
 
@@ -540,9 +483,6 @@ html {
     text-align: left;
   }
 
-  .hero-cs-link {
-    font-size: 0.8rem;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -623,23 +563,6 @@ html {
     margin-top: 1.25rem;
   }
 
-  .hero-cs-link {
-    font-size: 0.8rem;
-    font-weight: 500;
-    font-family: var(--font-secondary);
-    color: var(--color-text-secondary);
-    display: inline-block;
-    padding: 10px 20px;
-    margin-right: 15px;
-    background-color: transparent;
-    text-decoration: none;
-    border: 1.5px solid var(--color-text-tertiary);
-    border-radius: 0.25rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-    text-align: center;
-  }
 
   .hero-cs-link:hover {
     transform: translateY(-1px);
@@ -1131,17 +1054,13 @@ html {
 
 /* MEDIA QUERIES  */
 
-@media (max-width: 481px) {
-
+@media (max-width: 480px) {
   .card-image-wrapper {
-    max-height: 160px;
-
+    height: 550px;
   }
-
 }
 
-@media (min-width:481px) and (max-width:767px) {
-
+@media (min-width: 481px) and (max-width: 767px) {
   .card-image-wrapper {
     height: 150px;
   }
@@ -1165,23 +1084,6 @@ html {
     grid-column: 2/ 3;
     grid-row: 4 / 6
   }
-
-
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .card-image-wrapper {
-    height: 550px;
-  }
-
-}
-
-
-@media (min-width: 481px) and (max-width: 767px) {
-  .card-image-wrapper {
-    height: 350px;
-  }
-
 }
 
 
