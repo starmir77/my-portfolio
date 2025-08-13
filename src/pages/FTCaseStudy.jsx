@@ -28,7 +28,7 @@ function FTCaseStudy() {
                 <HeroCS
                     title="Designing Trust into a Peer-to-Peer Money Transferring Platform"
                     subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers, all without the backing of a financial institution. I designed a structured, step-by-step experience that built trust between strangers and reduced support inquiries by 45%."
-                    role="Reseach · Design · Usability Testing"
+                    role="Research · Design · Usability Testing"
                     date=""
                     image="/assets/FT_MainCS.png"
                     githubUrl=""
@@ -414,7 +414,7 @@ function FTCaseStudy() {
                     body="The final product offers a clear and transparent process that is structured for trust and has involvement from FriendlyTransfer."
                 />
 
-                <div className="image-div" style={{ marginTop: "2rem" }}>
+                <div className="image-div" style={{ marginTop: "2rem", zIndex: "2" }}>
 
                     <LoopingVideo
                         src="/assets/FT_Movie.mp4"

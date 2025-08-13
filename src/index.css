@@ -26,7 +26,7 @@
   --color-shadow-hover: rgba(255, 255, 255, 0.1);
 
   /* === Typography Sizes === */
-  --text-h1: 2.65rem;
+  --text-h1: 2.85rem;
   --text-h1-mobile: 2.5rem;
   --text-h2: 2.25rem;
   --text-h3: 1.5rem;
@@ -289,7 +289,6 @@ html {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
 }
 
 .hero-cs-image {
@@ -313,22 +312,23 @@ html {
   font-size: var(--text-h1);
   margin-bottom: 1rem;
   line-height: 3rem;
-  color: var(--color-text-secondary);
+  color:var(--color-text-secondary);
 }
 
 .hero-cs-subtitle {
   font-family: var(--font-secondary);
   font-size: 1.15rem;
+  line-height: 2rem;
   color: var(--color-text-secondary);
   margin-bottom: 2rem;
-  line-height: 1.75rem;
+  
 }
 
 .hero-cs-meta {
   font-family: var(--font-secondary);
-  font-size: 1.5rem;
-  color: var(--color-text-tertiary);
-  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  font-weight: 900;
 }
 
 .hero-cs-links {
@@ -412,10 +412,7 @@ html {
   }
 
   .hero-cs-meta {
-    font-family: var(--font-secondary);
     font-size: 1rem;
-    color: var(--color-text-tertiary);
-    font-weight: 900;
   }
 
 
@@ -463,28 +460,20 @@ html {
   }
 
   .hero-cs-title {
-    font-family: var(--font-primary);
     font-size: var(--text-h1);
     margin-bottom: 0.5rem;
     line-height: 3.5rem;
-    color: var(--color-text-secondary);
   }
 
   .hero-cs-subtitle {
-    font-family: var(--font-secondary);
     font-size: 1.15rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 1rem;
     line-height: 2rem;
+    margin-bottom: 1rem; 
   }
 
   .hero-cs-meta {
-    font-family: var(--font-secondary);
     font-size: var(--text-small);
-    color: var(--color-text-tertiary);
-    font-weight: 600;
   }
-
 
   .hero-cs-text {
     padding: 0rem 1.5rem;
@@ -496,19 +485,6 @@ html {
 
 @media (min-width: 1024px) {
 
-  .hero-cs {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100%;
-    color: var(--color-text-light);
-    overflow: hidden;
-    gap: 0rem;
-    z-index: 2;
-  }
 
   .hero-cs-wrapper {
     display: flex;
@@ -544,26 +520,16 @@ html {
   }
 
   .hero-cs-title {
-    font-family: var(--font-primary);
     font-size: var(--text-h1);
     margin-bottom: 1rem;
     line-height: 3.5rem;
-    color: var(--color-text-secondary);
   }
 
   .hero-cs-subtitle {
-    font-family: var(--font-secondary);
     font-size: 1.15rem;
-    color: var(--color-text-secondary);
+    line-height: 2rem;
     margin-bottom: 2rem;
-    line-height: 1.75rem;
-  }
-
-  .hero-cs-meta {
-    font-family: var(--font-secondary);
-    font-size: var(--text-small);
-    color: var(--color-text-tertiary);
-    font-weight: 600;
+    
   }
 
   .hero-cs-links {
@@ -589,19 +555,18 @@ html {
   }
 
   .hero-cs-title {
-    font-family: var(--font-primary);
     font-size: 4rem;
-    margin-bottom: 1rem;
-    line-height: 4.5rem;
-    color: var(--color-text-secondary);
+    line-height: 5rem;
   }
 
   .hero-cs-subtitle {
-    font-family: var(--font-secondary);
     font-size: 1.15rem;
-    color: var(--color-text-secondary);
-    margin-bottom: 2rem;
     line-height: 2rem;
+  }
+
+   .hero-cs-meta {
+    font-size: 1.15rem;
+    font-weight: 900;
   }
 
 }
@@ -648,6 +613,7 @@ html {
   line-height: 1.8;
   color: var(--color-secondary);
   margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 /* ======================================================
@@ -822,18 +788,20 @@ html {
 
 .quote-group .quote-block {
   flex: 1 1 100%;
-  background-color: #DEA6E7;
-  border-radius: 15px;
+  background-color: white;
+  border-radius: 8px;
   padding: 1.5rem;
   margin: 0;
+  border-left: 4px solid #DEA6E7;
 }
 
 .quote-group .quote-text {
   font-family: var(--font-secondary);
   font-style: italic;
   font-size: 1.15rem;
+  line-height: 2rem;
   color: var(--color-text-secondary);
-  line-height: 1.6;
+  
 }
 
 .quote-group .quote-footer {
@@ -1412,6 +1380,7 @@ Contact Me Section
 .hero-text-overlay h2 {
   font-family: var(--font-secondary);
   font-size: 1.15rem;
+  line-height: 2rem;
   font-weight: 800;
   color: var(--color-text-secondary);
 
@@ -1421,7 +1390,7 @@ Contact Me Section
   font-family: var(--font-secondary);
   color: var(--color-text-secondary);
   font-size: 1.15rem;
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -1478,96 +1447,6 @@ Contact Me Section
   .hero-text-overlay p {
     font-size: 1.25rem;
     line-height: 1.85rem;
-  }
-}
-
-/* ======================================================
- CTA 
-====================================================== */
-.text-cta {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 3rem 0;
-  background: var(--color-text-secondary);
-  color: white;
-  width: 100%;
-}
-
-.text-cta-wrapper {
-  width: 85%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.text-cta-title {
-  font-size: var(--text-h2);
-  color: var(--color-primary);
-  font-family: var(--font-primary);
-  margin-bottom: 1rem;
-}
-
-.text-cta-intro {
-  font-size: 1.125rem;
-  margin-bottom: 1rem;
-  font-family: var(--font-secondary);
-}
-
-.text-cta-list {
-  margin-bottom: 1rem;
-  padding-left: 1.25rem;
-}
-
-.text-cta-list-item {
-  margin-bottom: 0.5rem;
-  list-style-type: disc;
-}
-
-.text-cta-button {
-  margin-top: 1.25rem;
-  padding: 0.5rem;
-  color: var(--color-secondary);
-  background-image: var(--gradient-accent);
-  border-radius: 0.25rem;
-  font-weight: 500;
-  font-size: 1rem;
-  font-family: var(--font-secondary);
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none;
-  width: 190px;
-}
-
-.text-cta-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15),
-    0 0 20px 5px rgba(221, 166, 232, 0.2);
-  color: var(--color-secondary);
-}
-
-@media (max-width: 768px) {
-  .text-cta {
-    text-align: center;
-  }
-
-  .text-cta-title {
-    font-size: 1.5rem;
-  }
-
-  .text-cta-intro {
-    font-size: 1rem;
-  }
-
-  .text-cta-list {
-    padding-left: 1rem;
-    text-align: left;
-    display: inline-block;
-  }
-
-  .text-cta-button {
-    margin-top: 1.5rem;
   }
 }
 

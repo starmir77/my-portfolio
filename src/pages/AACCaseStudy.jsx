@@ -133,7 +133,7 @@ function AACCaseStudy() {
                 />
             </div>
 
-            < div style={{ marginBottom: "2rem" }}>
+            < div style={{ marginBottom: "3rem" }}>
                 <TextHeading
                     headline="Define"
                     title="Synthesizing Insights"

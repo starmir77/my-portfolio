@@ -18,7 +18,7 @@ function CandyverseCaseStudy() {
         <main>
             <Navbar></Navbar>
             <section className="hero-canvas-wrapper">
-                <CanvasHero />
+                <CanvasHero variant="scoped" />
                 <HeroCS
                     title="StilaXR: Helping Buyers Imagine Home in Empty Properties"
                     subtitle="An augmented reality prototype using Unity, ARKit & Vuforia to reimagine home staging."
@@ -46,12 +46,14 @@ function CandyverseCaseStudy() {
                     body="When buyers walk into an empty house, they’re expected to imagine their future — without much to guide them. The rooms feel cold, the scale is hard to judge, and most people simply don’t have the spatial imagination to picture furniture, light, or life in the space. Traditional home staging tries to solve this, but it comes with a cost: furniture rentals, logistics, and a single fixed aesthetic that might not match every buyer’s taste. Virtual staging is cheaper, but it’s static — just photos. It doesn’t help people move through the home and feel what it’s like to live there."
                 />
 
-                <ImageHeading
-                    headline=""
-                    title=""
-                    image="/assets/StilaXR_emptyFurnished.png"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline=""
+                        title=""
+                        image="/assets/StilaXR_emptyFurnished.png"
+                        alt="Screenshot of AAC interface with popup voice styling menu"
+                    />
+                </div>
             </div>
             <TextHeading
                 headline="Concept"
@@ -85,11 +87,13 @@ function CandyverseCaseStudy() {
                     "Buyers can explore the home in real time, walk through each room, and even swap between different furnishing styles to see what feels right."
                 ]}
             />
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/StilaXR_fromQRcodetoAR.png"
-            />
+            <div className="image-div">
+                <ImageHeading
+                    headline=""
+                    title=""
+                    image="/assets/StilaXR_fromQRcodetoAR.png"
+                />
+            </div>
             <TextHeading
                 headline="Architecture & Flow"
                 title="How it Works Behind the Scenes"
@@ -125,11 +129,13 @@ function CandyverseCaseStudy() {
                     "All property mappings and furniture styles are hosted in the cloud. The app dynamically pulls only the required asset bundles per session — no app updates needed — making the system lightweight, scalable, and easy to maintain."
                 ]}
             />
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/StilaXR_technicalArchitecture.png"
-            />
+            <div className="image-div">
+                <ImageHeading
+                    headline=""
+                    title=""
+                    image="/assets/StilaXR_technicalArchitecture.png"
+                />
+            </div>
             <TextHeading
                 headline="Interaction & UX Design"
                 title="Letting the Space Speak"
@@ -148,11 +154,13 @@ function CandyverseCaseStudy() {
                     "A single, unobtrusive toggle lets users switch between furniture styles in real time, revealing different looks without interrupting the experience."
                 ]}
             />
-            <ImageHeading
-                headline=""
-                title=""
-                image="/assets/StilaXR_minimalUI.png"
-            />
+            <div className="image-div">
+                <ImageHeading
+                    headline=""
+                    title=""
+                    image="/assets/StilaXR_minimalUI.png"
+                />
+            </div>
             <TextHeading
                 headline="Reflections"
                 title="Anchoring AR Is Hard — But Worth It"
