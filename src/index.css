@@ -312,7 +312,7 @@ html {
   font-size: var(--text-h1);
   margin-bottom: 1rem;
   line-height: 3rem;
-  color:var(--color-text-secondary);
+  color: var(--color-text-secondary);
 }
 
 .hero-cs-subtitle {
@@ -321,7 +321,7 @@ html {
   line-height: 2rem;
   color: var(--color-text-secondary);
   margin-bottom: 2rem;
-  
+
 }
 
 .hero-cs-meta {
@@ -468,7 +468,7 @@ html {
   .hero-cs-subtitle {
     font-size: 1.15rem;
     line-height: 2rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
 
   .hero-cs-meta {
@@ -529,7 +529,7 @@ html {
     font-size: 1.15rem;
     line-height: 2rem;
     margin-bottom: 2rem;
-    
+
   }
 
   .hero-cs-links {
@@ -564,7 +564,7 @@ html {
     line-height: 2rem;
   }
 
-   .hero-cs-meta {
+  .hero-cs-meta {
     font-size: 1.15rem;
     font-weight: 900;
   }
@@ -647,6 +647,7 @@ html {
 .image-heading-img-wrapper {
   width: 100%;
   margin-top: 1rem;
+  border-radius: 8px;
 }
 
 .image-heading-img {
@@ -801,7 +802,7 @@ html {
   font-size: 1.15rem;
   line-height: 2rem;
   color: var(--color-text-secondary);
-  
+
 }
 
 .quote-group .quote-footer {
@@ -821,39 +822,44 @@ html {
 
 /* ======================================================
    IntroHeading Component Styles
-   Full-width white background
 ====================================================== */
 
 .intro-heading {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
   width: 100%;
   z-index: 2;
-  background-color: #775d6f;
+  background-color: var(--color-text-secondary);
 }
 
 .intro-heading-inner {
   width: 85%;
   padding: 3rem 0;
+  margin: 0 auto;
 }
 
 .intro-heading-eyebrow {
-  font-size: var(--text-small);
+  font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   color: var(--color-tertiary);
   font-family: var(--font-secondary);
+  font-weight: 900;
+  margin-bottom:0;
 }
 
 .intro-heading-body {
-  width: 85%;
-  font-size: var(--text-body);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  font-size: 1.15rem;
+  line-height: 2rem;
   font-family: var(--font-secondary);
-  line-height: 1.8;
   color: white;
+}
+
+.intro-col {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 767px) {

@@ -25,7 +25,7 @@ function ARCaseStudy() {
                 <CanvasHero variant="scoped" />
                 <HeroCS
                     title="Redesigned for Speed: From Test to ROAS, in Half the Time"
-                    subtitle="AdRules is a SaaS platform that helps Facebook advertisers scale campaigns through automated workflows and smarter reporting. I redesigned a fragmented ad creation flow into a streamlined, in-context experience, cutting launch time in half and increasing creative testing by 50%."
+                    subtitle="AdRules is a SaaS platform that helps Facebook advertisers scale campaigns. As PM for UX, I redesigned its ad creation flow — cutting launch time in half, boosting creative testing by 50%, lifting ROAS by 30%, and increasing revenue by 15%."
                     role="UX Research · UX Design · Workflow Optimization"
                     date=""
                     image="/assets/AR_MainCS.png"
@@ -37,9 +37,9 @@ function ARCaseStudy() {
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
                 <IntroHeading
                     headline="OVERVIEW"
-                    problem="Creative testing was slowed down by a fragmented, manual workflow that made launching new ads inefficient "
-                    solution="I led the redesign of the creative launch process, embedding a streamlined, in-context workflow directly within AdRules’ reporting interface."
-                    impact="The new experience reduced friction, cut task time in half, and led to a 50% increase in creative testing launches."
+                    problem="Ad launches were slowed down by a fragmented, 14-step manual workflow that wasted time, added stress, and frustrated teams with every new ad launch."
+                    solution="As Product Manaager for UX, I led the redesign of the ad launch workflow, reducing a 14-step, two-tool process down to 4 streamlined steps in a single tool."
+                    impact={<>The new experience cut task time in half, drove a <strong>50% increase</strong> in creative testing launches, a <strong>30% ROAS lift</strong> for clients, and a <strong>15% revenue boost</strong> for the company.</>}
                 />
             </div>
 
@@ -123,7 +123,7 @@ function ARCaseStudy() {
             <div style={{ marginBottom: "5rem" }}>
 
                 <PageHeading
-                    title="The Solution: Ad Builder EXPRESS"
+                    title="The Solution: Ad Builder Express"
                     body="We built a shopping-cart-style feature in Advanced Reporting, allowing users to add elements to new ads as they searched - completely eliminating the need to copy and paste multiple element IDs."
                 />
 
@@ -131,7 +131,7 @@ function ARCaseStudy() {
                     text=""
                     items={[
                         "New button called Ad Builder Express",
-                        "AdsAn option in the existing Build dropdown menu to add a selected item to Ad Builder Express",
+                        "An option in the existing Build dropdown menu to add a selected item to Ad Builder Express",
                         "A visual guide to let users know what they need to select or have selected already"
                     ]}
                 />

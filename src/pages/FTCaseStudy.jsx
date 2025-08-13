@@ -27,7 +27,7 @@ function FTCaseStudy() {
                 <CanvasHero variant="scoped" />
                 <HeroCS
                     title="Designing Trust into a Peer-to-Peer Money Transferring Platform"
-                    subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers, all without the backing of a financial institution. I designed a structured, step-by-step experience that built trust between strangers and reduced support inquiries by 45%."
+                    subtitle="FriendlyTransfer is a peer-to-peer platform that helps users avoid international fees by coordinating local money transfers without a financial institution. As a Product Designer Consultant, I created a structured, step-by-step experience that built trust between strangers, reduced support inquiries by 45%, and increased closed transactions by 30%."
                     role="Research · Design · Usability Testing"
                     date=""
                     image="/assets/FT_MainCS.png"
@@ -39,9 +39,11 @@ function FTCaseStudy() {
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
                 <IntroHeading
                     headline="OVERVIEW"
-                    problem="Establishing trust and accountability between strangers exchanging money — without the authority or infrastructure of a traditional financial institution."
-                    solution="We introduced a structured flow that guided users step by step — building clarity, trust, and accountability throughout the exchange."
-                    impact="The new flow led to a 45% reduction in support tickets and user questions, signaling increased trust and clarity in the user experience."
+                    problem="Establishing trust and accountability between strangers exchanging money without the authority or infrastructure of a traditional financial institution."
+                    solution="As a Product Designer Consultant, I introduced a structured flow that guided users step by step, building clarity, trust, and accountability throughout the exchange."
+                    impact={<>
+                        The new flow led to a <strong>45% reduction</strong> in support tickets and user questions, and <strong>increased completed transactions by 30%</strong>, signaling greater trust and clarity.
+                    </>}
                 />
             </div>
 

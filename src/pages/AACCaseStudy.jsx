@@ -38,8 +38,8 @@ function AACCaseStudy() {
                     headline="OVERVIEW"
                     title="hi"
                     problem="People who rely on text-to-speech tools often lose the ability to express tone, sarcasm, or emotion making their communication feel flat and impersonal."
-                    solution="Designed and prototyped a voice interface that lets users shape how messages sound using pitch, pacing, and emphasis."
-                    impact="Gave users greater control over how they express themselves restoring nuance, personality, and intent to synthetic speech."
+                    solution="Built and deployed a working voice interface prototype, as part of a Master’s program in Design and Innovation, enabling users to shape how messages sound using pitch, pacing, and emphasis."
+                    impact="Turned synthetic speech from flat and robotic to expressive and human, empowering users to communicate with nuance and personality."
                 />
             </div>
 
@@ -48,7 +48,7 @@ function AACCaseStudy() {
                     title="Designing Humor into Assistive Speech Technology"
                     body="Most AAC (Augmentative and Alternative Communication) devices help people with speech impairments communicate clearly — but that clarity often comes at the cost of personality. For people with Motor Neuron Disease (MND), who increasingly rely on these tools as speech becomes difficult, this can be especially frustrating. In interviews and literature, a consistent theme emerged: users couldn’t express humor or sarcasm. Timing, pitch, and personality were flattened — and for many, that felt like losing a part of themselves. This project explores how we might restore some of that expressive power. I designed and prototyped an interface that lets AAC users shape how their message is delivered using pitch, speed, emphasis, pauses, and elongation — key elements of sarcastic and humorous tone."
                 />
-                <div className='quote-row'>
+                <div className='quote-row' style={{margin:"3rem auto"}}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -85,7 +85,7 @@ function AACCaseStudy() {
                     ]}
 
                 />
-                <div className="quote-row">
+                <div className="quote-row" style={{margin:"3rem auto"}}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -140,7 +140,7 @@ function AACCaseStudy() {
                     body="From both user research and the science behind sarcasm, it was clear that the following needs exist:"
                 />
 
-                <div className="quote-row">
+                <div className="quote-row" style={{margin:"3rem auto"}}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -309,7 +309,7 @@ function AACCaseStudy() {
                     title="Receiving Feedback"
                     body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
                 />
-                < div className="quote-row">
+                < div className="quote-row" style={{margin:"3rem auto"}}>
 
                     <QuoteGroup
                         quotes={[
@@ -357,7 +357,7 @@ function AACCaseStudy() {
 
                 <div className="image-div">
                     <ImageHeading
-                        headline="New Design"
+                        headline=""
                         title=""
                         image="/assets/AAC_FinalDesign.png"
                         alt="Screenshot of AAC interface with popup voice styling menu"

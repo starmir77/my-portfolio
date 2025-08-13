@@ -24,7 +24,7 @@ export const workProjects = [
         id: "friendlytransfer",
         title: "Designing Trust Into Peer-to-Peer Money Exchange",
         subtitle: "UX Research · UX Design · Product Design",
-        description: "Designed a trust-first exchange flow for a peer-to-peer money platform, reducing user confusion and cutting support tickets by 45%.",
+        description: "Designed a trust-first exchange flow for a peer-to-peer money platform, reducing user confusion, cutting support tickets by 45%, and increasing closed transactions by 30%.",
         imagesrc: "/assets/ProjectCard_FT.png",
         caseStudyPath: "/friendlytransfer",
     },
@@ -42,7 +42,7 @@ export const workProjects = [
         id: "adrules",
         title: "From Test to ROAS, in Half the Time",
         subtitle: "Research · UX Design",
-        description: "Redesigned a fragmented ad creation workflow into an integrated experience, cutting launch time in half and increasing creative testing by 50%.",
+        description: "Redesigned a fragmented ad creation workflow into an integrated experience, cutting launch time in half, boosting creative testing by 50%, lifting client ROAS by 30%, and growing company revenue by 15%.",
         imagesrc: "/assets/ProjectCard_AdRules.png",
         caseStudyPath: "/advertisers"
     },
