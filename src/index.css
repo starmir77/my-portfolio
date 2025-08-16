@@ -311,7 +311,7 @@ html {
   font-family: var(--font-primary);
   font-size: var(--text-h1);
   margin-bottom: 1rem;
-  line-height: 3rem;
+  line-height: 3.25rem;
   color: var(--color-text-secondary);
 }
 
@@ -320,7 +320,7 @@ html {
   font-size: 1.15rem;
   line-height: 2rem;
   color: var(--color-text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
 }
 
@@ -397,12 +397,11 @@ html {
   .hero-cs-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    line-height: 2.7rem;
+    line-height: 3.25rem;
   }
 
   .hero-cs-subtitle {
     font-size: 0.9rem;
-    margin-bottom: 1rem;
     line-height: 1.5rem;
   }
 
@@ -459,16 +458,10 @@ html {
     display: block;
   }
 
-  .hero-cs-title {
-    font-size: var(--text-h1);
-    margin-bottom: 0.5rem;
-    line-height: 3.5rem;
-  }
-
+  
   .hero-cs-subtitle {
     font-size: 1.15rem;
     line-height: 2rem;
-    margin-bottom: 1rem;
   }
 
   .hero-cs-meta {
@@ -522,14 +515,12 @@ html {
   .hero-cs-title {
     font-size: var(--text-h1);
     margin-bottom: 1rem;
-    line-height: 3.5rem;
+    line-height: 3.25rem;
   }
 
   .hero-cs-subtitle {
     font-size: 1.15rem;
     line-height: 2rem;
-    margin-bottom: 2rem;
-
   }
 
   .hero-cs-links {
@@ -861,6 +852,16 @@ html {
   display: flex;
   flex-direction: column;
 }
+
+.intro-col ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.intro-col li {
+  margin-bottom: 0.5rem;
+}
+
 
 @media (max-width: 767px) {
   .intro-heading-inner {
@@ -1618,13 +1619,11 @@ Simple Table
     grid-template-columns: 1fr;
     gap: 0.5rem;
     width: 85%;
-    /* slightly smaller gap on mobile */
   }
 }
 
-
 .image-div {
-  width: 65%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -1650,4 +1649,45 @@ Simple Table
     width: 85%;
 
   }
+}
+
+.square-crop {
+  width:100%;
+  max-width: 550px;  /* Set your desired size */
+  aspect-ratio: 5/ 4;
+  overflow: hidden;
+  position: relative;
+}
+
+.looping-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 110% !important;
+  width: auto !important;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-label{
+  font-size: var(--text-small);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-tertiary);
+  font-family: var(--font-secondary);
+  font-weight: 200;
 }

@@ -8,9 +8,7 @@ import IntroHeading from '../components/IntroHeading';
 import Navbar from '../components/Navbar';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
-
-
-
+import LoopingVideo from '../components/LoopingVideo';
 
 function ARCaseStudy() {
     useEffect(() => {
@@ -39,7 +37,12 @@ function ARCaseStudy() {
                     headline="OVERVIEW"
                     problem="Ad launches were slowed down by a fragmented, 14-step manual workflow that wasted time, added stress, and frustrated teams with every new ad launch."
                     solution="As Product Manaager for UX, I led the redesign of the ad launch workflow, reducing a 14-step, two-tool process down to 4 streamlined steps in a single tool."
-                    impact={<>The new experience cut task time in half, drove a <strong>50% increase</strong> in creative testing launches, a <strong>30% ROAS lift</strong> for clients, and a <strong>15% revenue boost</strong> for the company.</>}
+                    impact={[
+                        <>Cut task time by <strong>50%</strong></>,
+                        <>Drove a <strong>50%</strong> increase in creative testing launches</>,
+                        <><strong>30%</strong> ROAS lift for clients</>,
+                        <><strong>15%</strong> revenue boost for the company</>
+                    ]}
                 />
             </div>
 
@@ -103,51 +106,52 @@ function ARCaseStudy() {
                     body="Considering my observations, I identified a couple of design considerations to guide my process.
 "
                 />
-                <TextList
-                    text="1. Allow users to stay in Advanced Reporting:"
-                    items={[
-
-                    ]}
-                />
-                <TextList
-                    text="2. Allow users to select existing campaign elements such as:"
-                    items={[
-                        "Ad Sets",
-                        "Ads",
-                        "Individual creative elements such as: media, text, headline"
-                    ]}
-                />
-
+                <div className="quote-row">
+                    <QuoteGroup
+                        quotes={[{
+                            text: "Enable users to stay in Advanced Reporting:",
+                            author: ""
+                        }]}
+                    />
+                    <QuoteGroup
+                        quotes={[{
+                            text: "Enable users to select existing campaign elements such as ad sets, ads & individual creative elements",
+                            author: ""
+                        }]}
+                    />
+                </div>
             </div>
-
             <div style={{ marginBottom: "5rem" }}>
-
                 <PageHeading
                     title="The Solution: Ad Builder Express"
                     body="We built a shopping-cart-style feature in Advanced Reporting, allowing users to add elements to new ads as they searched - completely eliminating the need to copy and paste multiple element IDs."
                 />
-
                 <TextList
                     text=""
                     items={[
                         "New button called Ad Builder Express",
                         "An option in the existing Build dropdown menu to add a selected item to Ad Builder Express",
-                        "A visual guide to let users know what they need to select or have selected already"
+                        "A visual guide to let users know what they need to select or have selected already",
+                        "A review pop up modal to launch the campaign"
                     ]}
                 />
-
+                <div className="image-div">
+                    <ImageHeading
+                        image="/assets/AR_AllDesignElements.png"
+                    />
+                </div>
                 <TextHeading
                     headline=""
                     title="1. Starting a Launch in Ad Builder Express"
                     body="Clicking on the Express Build button would prompt a preview of elements needed to start a launch."
                 />
 
-                <div className="image-div">
-                    <ImageHeading
-                        headline=""
-                        title=""
-                        image="/assets/AR_Step1.png"
-                        alt=""
+                <div className="image-div" style={{ margin: "2rem auto" }}>
+                    <LoopingVideo
+                        src="/assets/AR_Video1.mp4"
+                        autoPlay
+                        muted
+                        playsInline
                     />
                 </div>
 
@@ -156,12 +160,12 @@ function ARCaseStudy() {
                     title="2. Adding Items to Ad Builder Express"
                     body="Users could also select an item from Advanced Reporting and add it via the Build button."
                 />
-                <div className="image-div">
-                    <ImageHeading
-                        headline=""
-                        title=""
-                        image="/assets/AR_Step2.png"
-                        alt=""
+                <div className="image-div" style={{ margin: "2rem auto" }}>
+                    <LoopingVideo
+                        src="/assets/AR_Video2.mp4"
+                        autoPlay
+                        muted
+                        playsInline
                     />
                 </div>
 
@@ -170,13 +174,12 @@ function ARCaseStudy() {
                     title="3. Viewing or Removing Items"
                     body="In addition to this visual guide, users could also remove an existing selection and add a new one."
                 />
-
-                <div className="image-div">
-                    <ImageHeading
-                        headline=""
-                        title=""
-                        image="/assets/AR_Step3.png"
-                        alt=""
+                <div className="image-div" style={{ margin: "2rem auto" }}>
+                    <LoopingVideo
+                        src="/assets/AR_Video3.mp4"
+                        autoPlay
+                        muted
+                        playsInline
                     />
                 </div>
                 <TextHeading
@@ -184,12 +187,12 @@ function ARCaseStudy() {
                     title="4. Launching Ads"
                     body="Once all elements have been selected, the review button would take users to another feature, AdBuilder, to review and launch the campaign."
                 />
-                <div className="image-div">
-                    <ImageHeading
-                        headline=""
-                        title=""
-                        image="/assets/AR_Step4.png"
-                        alt=""
+                <div className="image-div" style={{ margin: "2rem auto" }}>
+                    <LoopingVideo
+                        src="/assets/AR_Video4.mp4"
+                        autoPlay
+                        muted
+                        playsInline
                     />
                 </div>
             </div>
@@ -201,39 +204,19 @@ function ARCaseStudy() {
                     image=""
                     alt=""
                 />
-
             </div>
-
-            <div className="two-col-eq">
-                <TextList
-                    ordered={true}
-                    text="Before:"
-                    items={[
-                        "Feature 1: Advanced Reporting ",
-                        "Analyze results & identify winning ad elements ",
-                        "Copy Ad Sets IDs",
-                        "Copy Creative Text",
-                        "Copy Creative Headline",
-                        "Copy Creative CTA",
-                        "Copy Video IDs",
-                        "Exit Advanced Reporting & Go to Feature 2: AdBuilder",
-                        "Start a new campaign or template",
-                        "Paste winning elements in the Creative Step",
-                        "Paste Ad Sets IDs in the AdSet Step",
-                        "Go through all 9 steps of AdBuilder",
-                        "Review build",
-                        "Launch"
-                    ]}
+            <div className="two-col-eq" style={{ marginTop: "0rem" }}>
+                <ImageHeading
+                    headline="Before"
+                    title=""
+                    image="/assets/AR_SwimlaneDiagram.png"
+                    alt=""
                 />
-                <TextList
-                    ordered={true}
-                    text="After:"
-                    items={[
-                        "Find ad elements inside of Advanced Reporting",
-                        "Add them to AdBuild Express",
-                        "Review",
-                        "Launch",
-                    ]}
+                <ImageHeading
+                    headline="After"
+                    title=""
+                    image="/assets/AR_SwimlaneDiagram2.png"
+                    alt=""
                 />
             </div>
         </main >

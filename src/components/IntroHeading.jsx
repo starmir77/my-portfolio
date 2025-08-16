@@ -13,7 +13,10 @@ function IntroHeading({ problem, solution, impact }) {
           </div>
           <div className="intro-col">
             <p className="intro-heading-eyebrow">Impact</p>
-            <p>{impact}</p>
+            <ul>
+              {impact.map((point, i) => (<li key={i}>{point}</li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>

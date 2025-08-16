@@ -8,6 +8,7 @@ import IntroHeading from '../components/IntroHeading';
 import Navbar from '../components/Navbar';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
+import LoopingVideo from '../components/LoopingVideo';
 
 
 
@@ -39,7 +40,10 @@ function AACCaseStudy() {
                     title="hi"
                     problem="People who rely on text-to-speech tools often lose the ability to express tone, sarcasm, or emotion making their communication feel flat and impersonal."
                     solution="Built and deployed a working voice interface prototype, as part of a Master’s program in Design and Innovation, enabling users to shape how messages sound using pitch, pacing, and emphasis."
-                    impact="Turned synthetic speech from flat and robotic to expressive and human, empowering users to communicate with nuance and personality."
+                    impact={[
+                        <>Turned synthetic speech from flat and robotic to expressive and human</>,
+                        <>Empowered users to communicate with nuance and personality</>
+                    ]}
                 />
             </div>
 
@@ -48,7 +52,7 @@ function AACCaseStudy() {
                     title="Designing Humor into Assistive Speech Technology"
                     body="Most AAC (Augmentative and Alternative Communication) devices help people with speech impairments communicate clearly — but that clarity often comes at the cost of personality. For people with Motor Neuron Disease (MND), who increasingly rely on these tools as speech becomes difficult, this can be especially frustrating. In interviews and literature, a consistent theme emerged: users couldn’t express humor or sarcasm. Timing, pitch, and personality were flattened — and for many, that felt like losing a part of themselves. This project explores how we might restore some of that expressive power. I designed and prototyped an interface that lets AAC users shape how their message is delivered using pitch, speed, emphasis, pauses, and elongation — key elements of sarcastic and humorous tone."
                 />
-                <div className='quote-row' style={{margin:"3rem auto"}}>
+                <div className='quote-row' style={{ margin: "3rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -85,7 +89,7 @@ function AACCaseStudy() {
                     ]}
 
                 />
-                <div className="quote-row" style={{margin:"3rem auto"}}>
+                <div className="quote-row" style={{ margin: "3rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -140,7 +144,7 @@ function AACCaseStudy() {
                     body="From both user research and the science behind sarcasm, it was clear that the following needs exist:"
                 />
 
-                <div className="quote-row" style={{margin:"3rem auto"}}>
+                <div className="quote-row" style={{ margin: "3rem auto" }}>
                     <QuoteGroup
                         quotes={[
                             {
@@ -276,7 +280,7 @@ function AACCaseStudy() {
                     />
                 </div>
                 <div className="text-image">
-                    <h3>Add a pause by draggind the pause button</h3>
+                    <h3>Add a pause by dragging the pause button</h3>
                     <img
                         src="/assets/AAC_3.png"
                         alt=""
@@ -309,7 +313,7 @@ function AACCaseStudy() {
                     title="Receiving Feedback"
                     body="I presented the prototype to an MND specialist. They called the initiative brilliant, suggested the following changes:"
                 />
-                < div className="quote-row" style={{margin:"3rem auto"}}>
+                < div className="quote-row" style={{ margin: "3rem auto" }}>
 
                     <QuoteGroup
                         quotes={[
@@ -333,13 +337,12 @@ function AACCaseStudy() {
                                 text: "Simplify interactions for faster use.",
                                 author: ""
                             }
-
                         ]}
                     />
                 </div>
             </div>
 
-            < div style={{ marginBottom: "2rem" }}>
+            < div style={{ marginBottom: "5rem" }}>
 
                 <TextHeading
                     headline="Deliver"
@@ -351,57 +354,81 @@ function AACCaseStudy() {
                     items={[
                         "Replaced drag-and-drop with a popup menu",
                         "Added visual cues for active effects",
-                        "Prioritized ease of use on touch interfaces"
+                        "Prioritized ease of use on touch interfaces",
+                        "Added full sentence effects"
                     ]}
                 />
-
-                <div className="image-div">
-                    <ImageHeading
-                        headline=""
-                        title=""
-                        image="/assets/AAC_FinalDesign.png"
-                        alt="Screenshot of AAC interface with popup voice styling menu"
-                    />
+                <div className="video-grid">
+                    <div className="video-label"><h3> Adding Emphasis on a Word</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                label="hello"
+                                src="/assets/AAC_emphasize.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
+                    <div className="video-label"><h3>Speeding a Word Up</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                src="/assets/AAC_lower.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
+                    <div className="video-label"><h3>Slowing a Word Down</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                src="/assets/AAC_emphasize.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
+                    <div className="video-label"><h3>Raising a word's Pitch</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                src="/assets/AAC_emphasize.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
+                    <div className="video-label"><h3>Lowering a Word's Pitch</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                src="/assets/AAC_emphasize.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
+                    <div className="video-label"><h3>Adding Full sentence effects</h3>
+                        <div className="square-crop">
+                            <LoopingVideo
+                                src="/assets/AAC_emphasize.mp4"
+                                autoPlay
+                                muted
+                                playsInline
+                                className="looping-video"
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
-            < div style={{ marginBottom: "5rem" }}>
 
-                <TextHeading
-                    headline="Deliver"
-                    title="Creating a Functional Prototype"
-                    body="As the final step in this design process, I created a functional prototype to explore how individuals with speech impairments could express humor, sarcasm, and emotion through synthetic speech. The goal was to build a simple, accessible web-based tool that lets users style their voice output — not just speak, but speak with personality."
-                />
-
-
-                <TextList
-                    text="Front End:"
-                    items={[
-                        "HTML, CSS, JavaScript – Vanilla implementation for accessibility and fast loading",
-                        "SSML (Speech Synthesis Markup Language) – Used to dynamically control intonation, emphasis, pitch, rate, and pauses in speech"
-                    ]}
-                />
-
-                <TextList
-                    text="Voice API:"
-                    items={[
-                        "Amazon Polly – Converts SSML-enhanced text into expressive speech using cloud-based TTS (text-to-speech)"
-                    ]}
-                />
-
-                <TextList
-                    text="Server:"
-                    items={[
-                        "Node.js (Serverless Function) – Hosted on Vercel to handle API requests to Amazon Polly and return audio responses"
-                    ]}
-                />
-
-                <TextList
-                    text="Deployment:"
-                    items={[
-                        "Vercel – Both frontend and backend (Polly API handler) are deployed serverlessly for fast, globally accessible performance"
-                    ]}
-                />
-            </div>
             < div style={{ marginBottom: "5rem" }}>
 
                 <PageHeading

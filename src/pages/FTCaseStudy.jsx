@@ -41,9 +41,10 @@ function FTCaseStudy() {
                     headline="OVERVIEW"
                     problem="Establishing trust and accountability between strangers exchanging money without the authority or infrastructure of a traditional financial institution."
                     solution="As a Product Designer Consultant, I introduced a structured flow that guided users step by step, building clarity, trust, and accountability throughout the exchange."
-                    impact={<>
-                        The new flow led to a <strong>45% reduction</strong> in support tickets and user questions, and <strong>increased completed transactions by 30%</strong>, signaling greater trust and clarity.
-                    </>}
+                    impact={[
+                        <><strong>45% reduction</strong> in support tickets and user questions</>,
+                        <><strong>30% increase</strong> in completed exchanges</>
+                    ]}
                 />
             </div>
 
@@ -402,7 +403,7 @@ function FTCaseStudy() {
                     />
                 </div>
             </div>
-            <div style={{ marginBottom: "5rem" }}>
+            <div style={{ marginBottom: "2rem" }}>
                 <TextHeading
                     headline="Could not resist the cliche!"
                     title="Third Time's the Charm"
@@ -410,9 +411,19 @@ function FTCaseStudy() {
                 />
                 <SimpleTable rowLabels={FriendlyTransfer.rowLabels3} colLabels={FriendlyTransfer.colLabels3} data={FriendlyTransfer.data3} />
             </div>
+                <TextHeading
+                    headline=""
+                    title="Delivering the final flow"
+                    body=""
+                />
+            <div className="image-div" style={{marginBottom:"3rem"}}>
+                <ImageHeading
+                    image="/assets/FT_flow.png"
+                />
+            </div>
             <div style={{ marginBottom: "5rem" }}>
                 <PageHeading
-                    title="Delighting Users with The Final Product"
+                    title="Providing Users a Trust-Based Experience"
                     body="The final product offers a clear and transparent process that is structured for trust and has involvement from FriendlyTransfer."
                 />
 
