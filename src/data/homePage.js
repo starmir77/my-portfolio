@@ -47,13 +47,15 @@ export const workProjects = [
         caseStudyPath: "/advertisers"
     },
 
+   
+
     {
-        id: "stila",
-        title: "Visualizing Furnished Homes in Empty Spaces",
-        subtitle: "Unity, ARKit, Vuforia, Spatial UX",
-        description: "An iOS AR app that helps homebuyers visualize unfurnished properties—built with Unity, C#, and Cloud Content Delivery.",
-        imagesrc: "/assets/ProjectCard_StilaXR.png",
-        caseStudyPath: "/stilaxr"
+        id: "candyverse",
+        title: "Candyverse, Designing Playful Worlds for Young Minds",
+        subtitle: "Javascript, Three.JS, Gen-AI",
+        description: "An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel.",
+        imagesrc: "/assets/ProjectCard_Candyverse.png",
+        caseStudyPath: "/candyverse",
     }
 
 ]
@@ -66,6 +68,15 @@ export const workProjectsCode = [
         description: "An exploration of playful 3D interaction using Three.js, WebGL, and generative AI — deployed on Vercel.",
         imagesrc: "/assets/ProjectCard_Candyverse.png",
         caseStudyPath: "/candyverse",
+    },
+
+     {
+        id: "stila",
+        title: "Visualizing Furnished Homes in Empty Spaces",
+        subtitle: "Unity, ARKit, Vuforia, Spatial UX",
+        description: "An iOS AR app that helps homebuyers visualize unfurnished properties—built with Unity, C#, and Cloud Content Delivery.",
+        imagesrc: "/assets/ProjectCard_StilaXR.png",
+        caseStudyPath: "/stilaxr"
     },
 
 

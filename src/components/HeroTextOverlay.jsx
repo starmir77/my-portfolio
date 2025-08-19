@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
@@ -8,13 +8,18 @@ export default function HeroTextOverlay() {
   const scrambleRef = useRef(null);
   const roles = ["Design Engineer", "Designer", "Coder"];
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!scrambleRef.current) return;
 
     let index = 0;
-    let isCancelled = false;
+    let mounted = true;
+    let timeoutId;
+    const el = scrambleRef.current;
 
-    const loop = () => {
+    if (!el) return;
+
+    const run = () => {
+      if (!mounted || !scrambleRef.current) return;
       gsap.to(scrambleRef.current, {
         scrambleText: {
           text: roles[index],
@@ -26,14 +31,19 @@ export default function HeroTextOverlay() {
         ease: "power2.out",
         onComplete: () => {
           index = (index + 1) % roles.length;
-          setTimeout(loop, 1000);
+          if (mounted) timeoutId= setTimeout(run, 1000);
         },
       });
     };
 
-    document.fonts.ready.then(() => {
-      if (scrambleRef.current) loop();
-    });
+    const start = () => {if (mounted) run()};
+    (document?.fonts?.ready ?? Promise.resolve()).then(start);
+
+   return ()=> {
+    mounted = false;
+    if (timeoutId) clearTimeout(timeoutId);
+    gsap.killTweensOf(el);
+   }
 
   }, []);
 

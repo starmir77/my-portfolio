@@ -80,7 +80,7 @@ html {
 }
 
 .navbar-container {
-  max-width: 90%;
+  width: 90%;
   margin: 0 auto;
   padding: 0.5rem 4rem;
   display: flex;
@@ -171,7 +171,7 @@ html {
 @media (min-width: 1440px) {
 
   .navbar-container {
-    width: 85%;
+    width: 80%;
   }
 
 }
@@ -397,12 +397,12 @@ html {
   .hero-cs-title {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    line-height: 3.25rem;
+    line-height: 2.8rem;
   }
 
   .hero-cs-subtitle {
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    font-size: 1.15rem;
   }
 
   .hero-cs-text {
@@ -547,7 +547,7 @@ html {
 
   .hero-cs-title {
     font-size: 4rem;
-    line-height: 5rem;
+    line-height: 4.7rem;
   }
 
   .hero-cs-subtitle {
@@ -869,7 +869,17 @@ html {
   }
 
   .intro-heading-body {
-    width: 85%;
+    width: 95%;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+    .intro-col ul {
+    padding-left: 1rem;
+  }
+
+  .intro-col li {
+    margin-bottom: 0.4rem;
   }
 }
 
@@ -971,7 +981,7 @@ html {
 }
 
 
-.stila.default {
+.candyverse.default {
   position: relative;
   background-color: white;
   display: flex;
@@ -1084,7 +1094,7 @@ html {
     grid-row: 4 / 6;
   }
 
-  .stila.default {
+  .candyverse.default {
     grid-column: 2/ 3;
     grid-row: 4 / 6
   }

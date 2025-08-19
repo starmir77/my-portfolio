@@ -7,6 +7,7 @@ import TextList from '../components/TextList';
 import ImageHeading from '../components/ImageHeading';
 import { useEffect } from 'react';
 import CanvasHero from '../components/CanvasHero';
+import LoopingVideo from '../components/LoopingVideo';
 
 
 function CandyverseCaseStudy() {
@@ -18,7 +19,7 @@ function CandyverseCaseStudy() {
         <main>
             <Navbar></Navbar>
             <section className="hero-canvas-wrapper">
-                <CanvasHero variant="global" />
+                <CanvasHero variant="scoped" />
                 <HeroCS
                     title="Candyverse: Designing Playful Worlds for Curious Minds"
                     subtitle="Using Three.js and JavaScript to explore the fundamentals of spatial layout, movement, and playful 3D environments."
@@ -32,9 +33,13 @@ function CandyverseCaseStudy() {
 
             <IntroHeading
                 headline="Overview"
-                problem="Most 3D web experiences are either static or overly complex, leaving little room for playful, lightweight interaction that's accessible across devices."
-                solution="Designed and developed a browser-based 3D world using Three.js and JavaScript, focusing on spatial layout, animation, and visual delight - all optimized for performance and accessibility."
-                impact="Developed an interactive, mobile-friendly experience that showcases how design and front-end code can combine to create rich, joyful environments without a game engine."
+                problem="I wanted to learn JavaScript, Three.js, and scalable front-end design while experimenting with generative AI for asset creation."
+                solution="Built a browser-based 3D game with Three.js, using generative AI assets to explore scalable design, animation, and performance optimization."
+                impact={[
+                    <>Gained advanced skills in JavaScript, Three.js, and scalable design</>,
+                    <>Applied generative AI to accelerate asset creation</>,
+                    <>Built a lightweight, accessible 3D game optimized for mobile</>
+                ]}
             />
 
             <div style={{ margin: "5rem 0rem 0rem 0rem" }}>
@@ -79,13 +84,14 @@ function CandyverseCaseStudy() {
                     ]}
                 />
 
-
-                <ImageHeading
-                    headline="The Candyverse by Skybox AI"
-                    title=""
-                    image="/assets/2025Portfolio_Candyverse_Universe.webp"
-                    alt="Screenshot of AAC interface with popup voice styling menu"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline="The Candyverse by Skybox AI"
+                        title=""
+                        image="/assets/2025Portfolio_Candyverse_Universe.webp"
+                        alt="Screenshot of AAC interface with popup voice styling menu"
+                    />
+                </div>
             </div>
 
             <div style={{ margin: "0rem 0rem 2rem 0rem" }}>
@@ -124,7 +130,17 @@ function CandyverseCaseStudy() {
                         "The transition animation was custom-scripted to feel like a joyful lift-off, using camera movement and easing curves in Three.js for smooth motion."
                     ]}
                 />
-              
+
+                <div className="image-div" style={{margin:"2rem auto"}}>
+                    <LoopingVideo
+                        src="/assets/Candyverse_Transitions.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                       
+                    />
+                </div>
+
                 <TextHeading
                     headline=""
                     title="Technical Structure:"
@@ -188,11 +204,13 @@ function CandyverseCaseStudy() {
                     ]}
                 />
 
-                <ImageHeading
-                    headline="Architecture Diagram"
-                    title=""
-                    image="/assets/Candyverse_ArchitectureDiagram.png"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline="Architecture Diagram"
+                        title=""
+                        image="/assets/Candyverse_ArchitectureDiagram.png"
+                    />
+                </div>
             </div>
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
 
@@ -242,12 +260,13 @@ function CandyverseCaseStudy() {
                         "Animations and effects are intentionally lightweight to prevent frame drops and battery drain."
                     ]}
                 />
-
-                <ImageHeading
-                    headline="From 128MB to 1.9 MB, can you tell the difference?"
-                    title=""
-                    image="/assets/Candyverse_QualityDifference.png"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline="From 128MB to 1.9 MB, can you tell the difference?"
+                        title=""
+                        image="/assets/Candyverse_QualityDifference.png"
+                    />
+                </div>
             </div>
 
             <div style={{ margin: "0rem 0rem 3rem 0rem" }}>
@@ -287,12 +306,13 @@ function CandyverseCaseStudy() {
                         "Explore the Universe: Turn the linear world progression into an explorable map or galaxy — giving players more freedom and replayability."
                     ]}
                 />
-
-                <ImageHeading
-                    headline="Gumdrop World"
-                    title=""
-                    image="/assets/Candyverse_NextSteps.png"
-                />
+                <div className="image-div">
+                    <ImageHeading
+                        headline="Gumdrop World"
+                        title=""
+                        image="/assets/Candyverse_NextSteps.png"
+                    />
+                </div>
             </div>
         </main>
 

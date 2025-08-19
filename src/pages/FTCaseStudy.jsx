@@ -427,8 +427,7 @@ function FTCaseStudy() {
                     body="The final product offers a clear and transparent process that is structured for trust and has involvement from FriendlyTransfer."
                 />
 
-                <div className="image-div" style={{ marginTop: "2rem", zIndex: "2" }}>
-
+                <div className="image-div" style={{ marginTop: "2rem"}}>
                     <LoopingVideo
                         src="/assets/FT_Movie.mp4"
                         poster=""

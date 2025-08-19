@@ -25,7 +25,7 @@ function AACCaseStudy() {
                 <CanvasHero variant="scoped" />
                 <HeroCS
                     title="Designing Sarcasm: Reclaiming Voice, Humor & Identity"
-                    subtitle="Restoring the ability to express tone, emotion, and humor to users of assistive technology through intentional, human-centered interaction design."
+                    subtitle="I redesigned the interface of an Alternative and Augmentative Communication device to help people with speech impairments express tone, emotion, and humor, guided by research with individuals living with Motor Neuron Disease (MND)."
                     role="Design, Prototyping"
                     date="2025"
                     image="/assets/AAC_mainImage.png"
@@ -122,8 +122,7 @@ function AACCaseStudy() {
                 <TextHeading
                     headline=""
                     title=""
-                    body="A study that aimed at finding the phonetic properties of sarcasm found the following general characteristics in utterance.
-                (Cheang et al., 2008). These findings correlate with users’ desires and needs and thus guided the design process."
+                    body="A study that aimed at finding the phonetic properties of sarcasm found the following general characteristics in utterance. These findings correlate with users’ desires and needs and thus guided the design process."
                 />
 
                 <TextList
@@ -374,7 +373,7 @@ function AACCaseStudy() {
                     <div className="video-label"><h3>Speeding a Word Up</h3>
                         <div className="square-crop">
                             <LoopingVideo
-                                src="/assets/AAC_lower.mp4"
+                                src="/assets/AAC_faster.mp4"
                                 autoPlay
                                 muted
                                 playsInline
@@ -385,7 +384,7 @@ function AACCaseStudy() {
                     <div className="video-label"><h3>Slowing a Word Down</h3>
                         <div className="square-crop">
                             <LoopingVideo
-                                src="/assets/AAC_emphasize.mp4"
+                                src="/assets/AAC_slower.mp4"
                                 autoPlay
                                 muted
                                 playsInline
@@ -396,7 +395,7 @@ function AACCaseStudy() {
                     <div className="video-label"><h3>Raising a word's Pitch</h3>
                         <div className="square-crop">
                             <LoopingVideo
-                                src="/assets/AAC_emphasize.mp4"
+                                src="/assets/AAC_higher.mp4"
                                 autoPlay
                                 muted
                                 playsInline
@@ -407,7 +406,7 @@ function AACCaseStudy() {
                     <div className="video-label"><h3>Lowering a Word's Pitch</h3>
                         <div className="square-crop">
                             <LoopingVideo
-                                src="/assets/AAC_emphasize.mp4"
+                                src="/assets/AAC_lower.mp4"
                                 autoPlay
                                 muted
                                 playsInline
@@ -418,7 +417,7 @@ function AACCaseStudy() {
                     <div className="video-label"><h3>Adding Full sentence effects</h3>
                         <div className="square-crop">
                             <LoopingVideo
-                                src="/assets/AAC_emphasize.mp4"
+                                src="/assets/AAC_sentenceEmotions.mp4"
                                 autoPlay
                                 muted
                                 playsInline
